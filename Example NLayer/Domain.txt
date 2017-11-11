@@ -1,0 +1,21 @@
+Domain Entities: (database tables)
+				Entities POCO/IPOCO:
+					Data Validations
+					Calculated Field Logic
+					Internal logic of the entity
+
+Repository contracts:		
+				Interfaces.
+				Aggregates.
+				IoC Container 
+				Unit of Work (manage database connection and transaction, track entity changes and save changes to a data store.)
+
+Domain Services:
+				Classes with operations and interfaces (Actions related to one or more entities of the domain).
+
+
+
+Query Specifications:
+				Specifications.
+				Expression Tree.
+				LAMBDA and LINQ.

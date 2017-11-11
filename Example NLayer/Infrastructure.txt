@@ -1,0 +1,20 @@
+Data Model: 
+			Mapping (Fluent API).
+			Context.
+
+Persistence: 
+			ORM (EntityFramework) 
+				DB Migrations.
+
+External Distributed Services
+
+Repository: (retrieve and persist entities on a data source)
+			Objects Repositories.
+			Classes with data persistence logic.
+
+
+
+--------
+
+Entities, Value Objects, Aggregates and Roots
+					

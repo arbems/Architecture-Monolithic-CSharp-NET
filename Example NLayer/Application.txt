@@ -1,0 +1,13 @@
+Application Services:
+				Authorization 
+				Session 
+				Audit Logging
+
+DTOs:
+	DTO Mappers (mapping entities to DTOs)
+
+WORKFLOWS (Optional)
+
+
+* This layer coordinates transactions and data persistence, data validations, 
+security aspects with authentication.
