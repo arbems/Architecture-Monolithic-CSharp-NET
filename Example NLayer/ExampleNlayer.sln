@@ -27,7 +27,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.4-Domain", "1.4-Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5-Infrastructure", "1.5-Infrastructure", "{85516F25-AAE2-4581-AB23-CEE66B7C4FE3}"
 	ProjectSection(SolutionItems) = preProject
-		Cross-Cutting.txt = Cross-Cutting.txt
 		Infrastructure.txt = Infrastructure.txt
 	EndProjectSection
 EndProject
@@ -90,7 +89,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationMVCCore", "We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedServices.MainBoundedContext", "DistributedServices.MainBoundedContext\DistributedServices.MainBoundedContext.csproj", "{7199A95A-D458-447A-84D4-A5B161ADFE57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationMVCAngular", "WebApplicationMVCAngular\WebApplicationMVCAngular.csproj", "{FE10BEFC-15FC-4DD6-BEDC-E469723D08DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationMVCAngular", "WebApplicationMVCAngular\WebApplicationMVCAngular.csproj", "{FE10BEFC-15FC-4DD6-BEDC-E469723D08DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

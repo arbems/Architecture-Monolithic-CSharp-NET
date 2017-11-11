@@ -1,3 +1,5 @@
 Application Web
 Application mobile
 Others application
+
+* Layer Responsible for presenting the information to the user, interpreting their actions and sending them to the application.

@@ -1,20 +1,34 @@
 Data Model: 
-			Mapping (Fluent API).
-			Context.
+		Mapping (Fluent API).
+		Context.
 
 Persistence: 
-			ORM (EntityFramework) 
-				DB Migrations.
+		ORM (EntityFramework) 
+			Code First.
+			Entities, Value Objects, Aggregates and Roots
 
 External Distributed Services
 
 Repository: (retrieve and persist entities on a data source)
-			Objects Repositories.
-			Classes with data persistence logic.
+		Objects Repositories.
+		Classes with data persistence logic.
+
+Crosscutting:
+		Security
+		Operations
+		Authentication
+		Authorization
+		Caching
+		Communication
+		Configuration Management
+		Exception Management
+		Logging and Instrumentation
+		State Management
+		Validation
 
 
+* This layer is the support layer for the rest of the layers. It provides communication between the other layers,
+implements the persistence of business objects and support libraries for the other layers (Interface, Communication, Storage, etc.)
 
---------
 
-Entities, Value Objects, Aggregates and Roots
 					

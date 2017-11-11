@@ -1,2 +1,3 @@
 Web API
-SignalR
+
+* In this layer are the services.

@@ -1,7 +1,7 @@
 Application Services:
-				Authorization 
-				Session 
-				Audit Logging
+	Authorization 
+	Session 
+	Audit Logging
 
 DTOs:
 	DTO Mappers (mapping entities to DTOs)
@@ -9,5 +9,14 @@ DTOs:
 WORKFLOWS (Optional)
 
 
+* Responsible for coordinating all the elements of the application.
+It does not contain business logic or maintains the status of business objects.
+It is responsible for maintaining the state of the application and the flow of it.
+
 * This layer coordinates transactions and data persistence, data validations, 
 security aspects with authentication.
+
+* This layer controls and manipulates the domain. This layer will be responsible for calling the repositories of the domain
+to obtain the information, instantiate the services of the domain and other necessary components, and finally persist the changes in our database.
+
+* In this layer, we would also create interfaces and implementations for services, DTOs etc, if necessary.
