@@ -1,10 +1,8 @@
-﻿
-
-namespace Microsoft.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.UnitOfWork.Mapping
+﻿namespace Microsoft.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.UnitOfWork.Mapping
 {
     using System.Data.Entity.ModelConfiguration;
 
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg;
+    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg;
 
     /// <summary>
     /// The product entity type configuration

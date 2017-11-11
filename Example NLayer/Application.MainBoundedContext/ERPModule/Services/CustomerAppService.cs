@@ -7,27 +7,27 @@
 //===================================================================================
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
+// http://microsoftExampleNlayer.codeplex.com/license
 //===================================================================================
 
 
-namespace Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services
+namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using Microsoft.Samples.NLayerApp.Application.MainBoundedContext.DTO;
-    using Microsoft.Samples.NLayerApp.Application.MainBoundedContext.Resources;
-    using Microsoft.Samples.NLayerApp.Application.Seedwork;
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CountryAgg;
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
-    using Microsoft.Samples.NLayerApp.Domain.Seedwork.Specification;
-    using Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging;
-    using Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Validator;
+    using Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.DTO;
+    using Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.Resources;
+    using Microsoft.Samples.ExampleNlayer.Application.Seedwork;
+    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CountryAgg;
+    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
+    using Microsoft.Samples.ExampleNlayer.Domain.Seedwork.Specification;
+    using Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging;
+    using Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Validator;
 
     /// <summary>
     /// The customer management service implementation.
-    /// <see cref="Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerAppService"/>
+    /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerAppService"/>
     /// </summary>
     public class CustomerAppService
         : ICustomerAppService
@@ -64,10 +64,10 @@ namespace Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.S
         #region ICustomerAppService Members
 
         /// <summary>
-        /// <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.AddNewCustomer"/>
+        /// <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.AddNewCustomer"/>
         /// </summary>
-        /// <param name="customerDTO"><see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.AddNewCustomer"/></param>
-        /// <returns><see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.AddNewCustomer"/></returns>
+        /// <param name="customerDTO"><see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.AddNewCustomer"/></param>
+        /// <returns><see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.AddNewCustomer"/></returns>
         public CustomerDTO AddNewCustomer(CustomerDTO customerDTO)
         {
             //check preconditions
@@ -99,10 +99,10 @@ namespace Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.S
         }
 
         /// <summary>
-        /// <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.UpdateCustomer"/>
+        /// <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.UpdateCustomer"/>
         /// </summary>
-        /// <param name="customerDTO"><see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.UpdateCustomer"/></param>
-        /// <returns><see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.UpdateCustomer"/></returns>
+        /// <param name="customerDTO"><see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.UpdateCustomer"/></param>
+        /// <returns><see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.UpdateCustomer"/></returns>
         public void UpdateCustomer(CustomerDTO customerDTO)
         {
             if (customerDTO == null || customerDTO.Id == Guid.Empty)
@@ -127,9 +127,9 @@ namespace Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.S
         }
 
         /// <summary>
-        /// <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.RemoveCustomer"/>
+        /// <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.RemoveCustomer"/>
         /// </summary>
-        /// <param name="customerId"><see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.Seedwork.Services.ICustomerManagement.RemoveCustomer"/></param>
+        /// <param name="customerId"><see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.Seedwork.Services.ICustomerManagement.RemoveCustomer"/></param>
         public void RemoveCustomer(Guid customerId)
         {
             var customer = _customerRepository.Get(customerId);
@@ -147,11 +147,11 @@ namespace Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.S
         }
 
         /// <summary>
-        ///  <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCustomers"/>
+        ///  <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCustomers"/>
         /// </summary>
-        /// <param name="pageIndex"> <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCustomers"/></param>
-        /// <param name="pageCount"> <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCustomers"/></param>
-        /// <returns> <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCustomers"/></returns>
+        /// <param name="pageIndex"> <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCustomers"/></param>
+        /// <param name="pageCount"> <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCustomers"/></param>
+        /// <returns> <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCustomers"/></returns>
         public List<CustomerListDTO> FindCustomers(int pageIndex, int pageCount)
         {
             if (pageIndex < 0 || pageCount <= 0)
@@ -170,10 +170,10 @@ namespace Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.S
                 return null;
         }
         /// <summary>
-        ///  <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCustomers"/>
+        ///  <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCustomers"/>
         /// </summary>
-        /// <param name="text"> <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCustomers"/></param>
-        /// <returns> <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCustomers"/></returns>
+        /// <param name="text"> <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCustomers"/></param>
+        /// <returns> <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCustomers"/></returns>
         public List<CustomerListDTO> FindCustomers(string text)
         {
             //get the specification
@@ -197,10 +197,10 @@ namespace Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.S
                 return null;
         }
         /// <summary>
-        /// <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/>
+        /// <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/>
         /// </summary>
-        /// <param name="customerId"><see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/></param>
-        /// <returns><see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/></returns>
+        /// <param name="customerId"><see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/></param>
+        /// <returns><see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/></returns>
         public CustomerDTO FindCustomer(Guid customerId)
         {
             //recover existing customer and map
@@ -214,11 +214,11 @@ namespace Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.S
                 return null;
         }
         /// <summary>
-        ///  <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/>
+        ///  <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/>
         /// </summary>
-        /// <param name="pageIndex"> <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/></param>
-        /// <param name="pageCount"> <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/></param>
-        /// <returns> <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/></returns>
+        /// <param name="pageIndex"> <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/></param>
+        /// <param name="pageCount"> <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/></param>
+        /// <returns> <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/></returns>
         public List<CountryDTO> FindCountries(int pageIndex, int pageCount)
         {
             if (pageIndex < 0 || pageCount <= 0)
@@ -238,10 +238,10 @@ namespace Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.S
 
         }
         /// <summary>
-        ///  <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/>
+        ///  <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/>
         /// </summary>
-        /// <param name="text"> <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/></param>
-        /// <returns> <see cref="M:Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/></returns>
+        /// <param name="text"> <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/></param>
+        /// <returns> <see cref="M:Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ICustomerManagement.FindCountries"/></returns>
         public List<CountryDTO> FindCountries(string text)
         {
             //get the specification

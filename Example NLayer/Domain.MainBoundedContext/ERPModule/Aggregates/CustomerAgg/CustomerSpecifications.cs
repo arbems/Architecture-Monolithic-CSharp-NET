@@ -7,18 +7,18 @@
 //===================================================================================
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
+// http://microsoftExampleNlayer.codeplex.com/license
 //===================================================================================
 
 
-namespace Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg
+namespace Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg
 {
 
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Microsoft.Samples.NLayerApp.Domain.Seedwork.Specification;
+    using Microsoft.Samples.ExampleNlayer.Domain.Seedwork.Specification;
 
     /// <summary>
     /// A list of customer specifications. You can learn

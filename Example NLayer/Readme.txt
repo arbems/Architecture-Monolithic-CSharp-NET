@@ -1,3 +1,5 @@
-Design principles 'SOLID'
-DDD (Domain-oriented architecture) architecture and its patterns:
-	- Entity, POCO/IPOCO Entities, Value-Object, Aggregates, Repository, Unit of Work, Specification pattern.. etc
+Start database (Code First):
+
+Enable-Migrations -StartUpProjectName Infrastructure.Data.MainBoundedContext
+Add-Migration -StartUpProjectName Infrastructure.Data.MainBoundedContext
+Update-database -StartUpProjectName Infrastructure.Data.MainBoundedContext

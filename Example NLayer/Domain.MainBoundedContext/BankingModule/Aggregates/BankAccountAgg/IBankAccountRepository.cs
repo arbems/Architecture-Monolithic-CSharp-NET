@@ -7,17 +7,17 @@
 //===================================================================================
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
+// http://microsoftExampleNlayer.codeplex.com/license
 //===================================================================================
 
 
-namespace Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg
+namespace Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg
 {
-    using Microsoft.Samples.NLayerApp.Domain.Seedwork;
+    using Microsoft.Samples.ExampleNlayer.Domain.Seedwork;
 
     /// <summary>
     /// Base contract for bank account repository
-    /// <see cref="Microsoft.Samples.NLayerApp.Domain.Seedwork.IRepository{BankAccount}"/>
+    /// <see cref="Microsoft.Samples.ExampleNlayer.Domain.Seedwork.IRepository{BankAccount}"/>
     /// </summary>
     public interface IBankAccountRepository
         :IRepository<BankAccount>

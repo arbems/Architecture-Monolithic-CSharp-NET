@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Layers", "1-Layers", "{95501A1D-3360-4612-A32E-1D0D757B079E}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1-Presentation", "1.1-Presentation", "{B97F79DB-D83B-4A27-ADF3-A55EDA299132}"
 	ProjectSection(SolutionItems) = preProject
@@ -77,19 +80,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silverlight.Client.Web", "Presentation.RIA.Silverlight.Client.Web\Silverlight.Client.Web.csproj", "{34EC53BB-E021-46E1-A569-705A977B98FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silverlight.ServiceAgents", "Presentation.RIA.Silverlight.ServiceAgents\Silverlight.ServiceAgents.csproj", "{E4014D48-55A6-4019-9463-9AF3D4E0AF8D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{7199A95A-D458-447A-84D4-A5B161ADFE57} = {7199A95A-D458-447A-84D4-A5B161ADFE57}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.MainBoundedContext.DTO", "Application.MainBoundedContext.DTO\Application.MainBoundedContext.DTO.csproj", "{62FB7287-FE06-4E8B-AB66-25603D9E2610}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{F224A76A-5C5A-4027-8D81-94A9C728269C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationMVCCore", "WebApplicationMVCCore\WebApplicationMVCCore.csproj", "{8F819794-AC8F-4AE3-9463-AA7DC8CDC6D5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedServices.MainBoundedContext", "DistributedServices.MainBoundedContext\DistributedServices.MainBoundedContext.csproj", "{7199A95A-D458-447A-84D4-A5B161ADFE57}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationMVCAngular", "WebApplicationMVCAngular\WebApplicationMVCAngular.csproj", "{FE10BEFC-15FC-4DD6-BEDC-E469723D08DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -149,18 +143,6 @@ Global
 		{62FB7287-FE06-4E8B-AB66-25603D9E2610}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62FB7287-FE06-4E8B-AB66-25603D9E2610}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62FB7287-FE06-4E8B-AB66-25603D9E2610}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8F819794-AC8F-4AE3-9463-AA7DC8CDC6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F819794-AC8F-4AE3-9463-AA7DC8CDC6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F819794-AC8F-4AE3-9463-AA7DC8CDC6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F819794-AC8F-4AE3-9463-AA7DC8CDC6D5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7199A95A-D458-447A-84D4-A5B161ADFE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7199A95A-D458-447A-84D4-A5B161ADFE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7199A95A-D458-447A-84D4-A5B161ADFE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7199A95A-D458-447A-84D4-A5B161ADFE57}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE10BEFC-15FC-4DD6-BEDC-E469723D08DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE10BEFC-15FC-4DD6-BEDC-E469723D08DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE10BEFC-15FC-4DD6-BEDC-E469723D08DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE10BEFC-15FC-4DD6-BEDC-E469723D08DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -197,9 +179,6 @@ Global
 		{E4014D48-55A6-4019-9463-9AF3D4E0AF8D} = {2A2F35BC-9DC3-480C-922E-5C5A55C2AC65}
 		{62FB7287-FE06-4E8B-AB66-25603D9E2610} = {85B06DA8-BF42-457F-AABA-468AC1DB1163}
 		{F224A76A-5C5A-4027-8D81-94A9C728269C} = {B97F79DB-D83B-4A27-ADF3-A55EDA299132}
-		{8F819794-AC8F-4AE3-9463-AA7DC8CDC6D5} = {F224A76A-5C5A-4027-8D81-94A9C728269C}
-		{7199A95A-D458-447A-84D4-A5B161ADFE57} = {896389E4-2781-4CEA-AE2F-95990834E610}
-		{FE10BEFC-15FC-4DD6-BEDC-E469723D08DE} = {F224A76A-5C5A-4027-8D81-94A9C728269C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B2F130F0-0FC0-4860-A5C8-41A712104196}

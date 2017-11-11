@@ -1,10 +1,10 @@
 ﻿
 
-namespace Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services
+namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services
 {
     using System;
     using System.Collections.Generic;
-    using Microsoft.Samples.NLayerApp.Application.MainBoundedContext.DTO;
+    using Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.DTO;
 
     /// <summary>
     /// This is the contract that the application will interact to perform various operations for "sales management".

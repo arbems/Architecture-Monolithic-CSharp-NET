@@ -1,16 +1,4 @@
-﻿//===================================================================================
-// Microsoft Developer and Platform Evangelism
-//=================================================================================== 
-// THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, 
-// EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES 
-// OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
-//===================================================================================
-// Copyright (c) Microsoft Corporation.  All Rights Reserved.
-// This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
-//===================================================================================
-
-namespace Microsoft.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.UnitOfWork
+﻿namespace Microsoft.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.UnitOfWork
 {
     using System.Collections.Generic;
     using System.Linq;
@@ -20,17 +8,19 @@ namespace Microsoft.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.Uni
     using System.Data.Entity.ModelConfiguration.Conventions;
 
     
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CountryAgg;
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.OrderAgg;
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg;
-    using Microsoft.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.UnitOfWork.Mapping;
-    using Microsoft.Samples.NLayerApp.Infrastructure.Data.Seedwork;
+    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
+    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CountryAgg;
+    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
+    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.OrderAgg;
+    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg;
+    using Microsoft.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.UnitOfWork.Mapping;
+    using Microsoft.Samples.ExampleNlayer.Infrastructure.Data.Seedwork;
 
     public class MainBCUnitOfWork
         :DbContext,IQueryableUnitOfWork
     {
+        public MainBCUnitOfWork() : base("ExampleNlayer") { }
+
         #region IDbSet Members
 
         IDbSet<Customer> _customers;
@@ -181,6 +171,9 @@ namespace Microsoft.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.Uni
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            //Pluralization convention delete table names
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
             //Remove unused conventions
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
 

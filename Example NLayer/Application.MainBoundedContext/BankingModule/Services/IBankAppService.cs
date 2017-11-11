@@ -7,16 +7,16 @@
 //===================================================================================
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
+// http://microsoftExampleNlayer.codeplex.com/license
 //===================================================================================
 			
 
-namespace Microsoft.Samples.NLayerApp.Application.MainBoundedContext.BankingModule.Services
+namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services
 {
     using System;
     using System.Collections.Generic;
 
-    using Microsoft.Samples.NLayerApp.Application.MainBoundedContext.DTO;
+    using Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.DTO;
 
     /// <summary>
     /// This is the contract that the application will interact to perform various operations for "banking management".

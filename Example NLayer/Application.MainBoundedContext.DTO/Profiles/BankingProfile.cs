@@ -7,13 +7,13 @@
 //===================================================================================
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
+// http://microsoftExampleNlayer.codeplex.com/license
 //===================================================================================
-namespace Microsoft.Samples.NLayerApp.Application.MainBoundedContext.DTO.Profiles
+namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.DTO.Profiles
 {
     using AutoMapper;
-    using Microsoft.Samples.NLayerApp.Application.MainBoundedContext.DTO;
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
+    using Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.DTO;
+    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
 
     class BankingProfile
         : Profile

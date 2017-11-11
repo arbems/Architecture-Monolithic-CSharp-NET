@@ -7,15 +7,15 @@
 //===================================================================================
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
+// http://microsoftExampleNlayer.codeplex.com/license
 //===================================================================================
 
 
-namespace Microsoft.Samples.NLayerApp.Application.Seedwork
+namespace Microsoft.Samples.ExampleNlayer.Application.Seedwork
 {
     using System.Collections.Generic;
-    using Microsoft.Samples.NLayerApp.Domain.Seedwork;
-    using Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Adapter;
+    using Microsoft.Samples.ExampleNlayer.Domain.Seedwork;
+    using Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter;
 
     public static class ProjectionsExtensionMethods
     {

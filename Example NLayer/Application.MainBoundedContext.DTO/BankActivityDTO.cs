@@ -8,10 +8,10 @@
 //===================================================================================
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
+// http://microsoftExampleNlayer.codeplex.com/license
 //===================================================================================
 			
-namespace Microsoft.Samples.NLayerApp.Application.MainBoundedContext.DTO
+namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.DTO
 {
 
     using System;

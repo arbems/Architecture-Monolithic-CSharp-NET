@@ -7,13 +7,13 @@
 //===================================================================================
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
+// http://microsoftExampleNlayer.codeplex.com/license
 //===================================================================================
 
-namespace Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.BankingModule.Services
+namespace Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services
 {
     using System;
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
+    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
 
 
     /// <summary>

@@ -7,15 +7,15 @@
 //===================================================================================
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
+// http://microsoftExampleNlayer.codeplex.com/license
 //===================================================================================
 
-namespace Microsoft.Samples.NLayerApp.Domain.Seedwork.Specification
+namespace Microsoft.Samples.ExampleNlayer.Domain.Seedwork.Specification
 {
     using System;
     using System.Linq.Expressions;
 
-    using Microsoft.Samples.NLayerApp.Domain.Seedwork;
+    using Microsoft.Samples.ExampleNlayer.Domain.Seedwork;
 
 
     /// <summary>

@@ -7,18 +7,18 @@
 //===================================================================================
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
+// http://microsoftExampleNlayer.codeplex.com/license
 //===================================================================================
 
 
-namespace Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CountryAgg
+namespace Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CountryAgg
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
-    using Microsoft.Samples.NLayerApp.Domain.Seedwork;
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.Resources;
+    using Microsoft.Samples.ExampleNlayer.Domain.Seedwork;
+    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.Resources;
 
     /// <summary>
     /// The country entity

@@ -7,11 +7,11 @@
 //===================================================================================
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
+// http://microsoftExampleNlayer.codeplex.com/license
 //===================================================================================
 
 
-namespace Microsoft.Samples.NLayerApp.Domain.Seedwork.Specification
+namespace Microsoft.Samples.ExampleNlayer.Domain.Seedwork.Specification
 {
     using System;
     using System.Linq.Expressions;
@@ -27,9 +27,9 @@ namespace Microsoft.Samples.NLayerApp.Domain.Seedwork.Specification
         #region Specification overrides
 
         /// <summary>
-        /// <see cref=" Microsoft.Samples.NLayerApp.Domain.Seedwork.Specification.Specification{TEntity}"/>
+        /// <see cref=" Microsoft.Samples.ExampleNlayer.Domain.Seedwork.Specification.Specification{TEntity}"/>
         /// </summary>
-        /// <returns><see cref=" Microsoft.Samples.NLayerApp.Domain.Seedwork.Specification.Specification{TEntity}"/></returns>
+        /// <returns><see cref=" Microsoft.Samples.ExampleNlayer.Domain.Seedwork.Specification.Specification{TEntity}"/></returns>
         public override System.Linq.Expressions.Expression<Func<TEntity, bool>> SatisfiedBy()
         {
             //Create "result variable" transform adhoc execution plan in prepared plan

@@ -1,27 +1,14 @@
-﻿//===================================================================================
-// Microsoft Developer & Platform Evangelism
-//=================================================================================== 
-// THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, 
-// EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES 
-// OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
-//===================================================================================
-// Copyright (c) Microsoft Corporation.  All Rights Reserved.
-// This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
-//===================================================================================
-			
-
-namespace Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Logging
+﻿namespace Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.NetFramework.Logging
 {
     using System;
     using System.Diagnostics;
     using System.Globalization;
     using System.Security;
 
-    using Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging;
+    using Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging;
     
     /// <summary>
-    /// Implementation of contract <see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+    /// Implementation of contract <see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/>
     /// using System.Diagnostics API.
     /// </summary>
     public sealed class TraceSourceLog
@@ -41,7 +28,7 @@ namespace Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.L
         public TraceSourceLog()
         {
             // Create default source
-            source = new TraceSource("NLayerApp");
+            source = new TraceSource("NLayerExample");
         }
 
         #endregion
@@ -74,10 +61,10 @@ namespace Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.L
         #region ILogger Members
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="args"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="args"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void LogInfo(string message, params object[] args)
         {
             if (!String.IsNullOrWhiteSpace(message))
@@ -88,10 +75,10 @@ namespace Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.L
             }
         }
         /// <summary>
-        /// <see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="args"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="args"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void LogWarning(string message, params object[] args)
         {
 
@@ -104,10 +91,10 @@ namespace Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.L
         }
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="args"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="args"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void LogError(string message, params object[] args)
         {
             if (!String.IsNullOrWhiteSpace(message))
@@ -119,11 +106,11 @@ namespace Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.L
         }
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="exception"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="args"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="exception"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="args"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void LogError(string message, Exception exception, params object[] args)
         {
             if (!String.IsNullOrWhiteSpace(message)
@@ -139,10 +126,10 @@ namespace Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.L
         }
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="args"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="args"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void Debug(string message, params object[] args)
         {
             if (!String.IsNullOrWhiteSpace(message))
@@ -154,11 +141,11 @@ namespace Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.L
         }
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="exception"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="args"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="exception"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="args"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void Debug(string message, Exception exception,params object[] args)
         {
             if (!String.IsNullOrWhiteSpace(message)
@@ -174,9 +161,9 @@ namespace Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.L
         }
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="item"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="item"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void Debug(object item)
         {
             if (item != null)
@@ -186,10 +173,10 @@ namespace Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.L
         }
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="args"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="args"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void Fatal(string message, params object[] args)
         {
             if (!String.IsNullOrWhiteSpace(message))
@@ -201,10 +188,10 @@ namespace Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.L
         }
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="exception"><see cref="Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="exception"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void Fatal(string message, Exception exception,params object[] args)
         {
             if (!String.IsNullOrWhiteSpace(message)

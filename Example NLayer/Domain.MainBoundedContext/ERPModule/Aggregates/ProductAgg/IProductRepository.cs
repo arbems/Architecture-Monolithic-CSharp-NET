@@ -7,16 +7,16 @@
 //===================================================================================
 // Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
+// http://microsoftExampleNlayer.codeplex.com/license
 //===================================================================================
 
-namespace Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg
+namespace Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg
 {
-    using Microsoft.Samples.NLayerApp.Domain.Seedwork;
+    using Microsoft.Samples.ExampleNlayer.Domain.Seedwork;
 
     /// <summary>
     /// Base contract for product repository
-    /// <see cref="Microsoft.Samples.NLayerApp.Domain.Seedwork.IRepository{Product}"/>
+    /// <see cref="Microsoft.Samples.ExampleNlayer.Domain.Seedwork.IRepository{Product}"/>
     /// </summary>
     public interface  IProductRepository
         :IRepository<Product>

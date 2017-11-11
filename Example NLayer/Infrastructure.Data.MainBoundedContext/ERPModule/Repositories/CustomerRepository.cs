@@ -1,14 +1,14 @@
 ﻿
-namespace Microsoft.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.ERPModule.Repositories
+namespace Microsoft.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.ERPModule.Repositories
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Data.Entity;
 
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
-    using Microsoft.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.UnitOfWork;
-    using Microsoft.Samples.NLayerApp.Infrastructure.Data.Seedwork;
+    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
+    using Microsoft.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.UnitOfWork;
+    using Microsoft.Samples.ExampleNlayer.Infrastructure.Data.Seedwork;
 
 
     /// <summary>
@@ -34,7 +34,7 @@ namespace Microsoft.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.ERP
         #region ICustomerRepository Members
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/>
+        /// <see cref="Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/>
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -64,11 +64,11 @@ namespace Microsoft.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.ERP
         }
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/>
+        /// <see cref="Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/>
         /// </summary>
-        /// <param name="pageIndex"><see cref="Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/></param>
-        /// <param name="pageCount"><see cref="Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/></param>
-        /// <returns><see cref="Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/></returns>
+        /// <param name="pageIndex"><see cref="Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/></param>
+        /// <param name="pageCount"><see cref="Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/></param>
+        /// <returns><see cref="Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/></returns>
         public IEnumerable<Customer> GetEnabled(int pageIndex, int pageCount)
         {
             var currentUnitOfWork = this.UnitOfWork as MainBCUnitOfWork;
