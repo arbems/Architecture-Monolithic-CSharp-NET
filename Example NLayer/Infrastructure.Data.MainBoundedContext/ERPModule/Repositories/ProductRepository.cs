@@ -1,10 +1,10 @@
 ﻿
 
-namespace Microsoft.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.ERPModule.Repositories
+namespace Nlayer.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.ERPModule.Repositories
 {
-    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg;
-    using Microsoft.Samples.ExampleNlayer.Infrastructure.Data.Seedwork;
-    using Microsoft.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.UnitOfWork;
+    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg;
+    using Nlayer.Samples.ExampleNlayer.Infrastructure.Data.Seedwork;
+    using Nlayer.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.UnitOfWork;
 
     /// <summary>
     /// Product repository implementation

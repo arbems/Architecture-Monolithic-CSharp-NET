@@ -1,7 +1,7 @@
-﻿namespace Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.NetFramework.Adapter
+﻿namespace Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.NetFramework.Adapter
 {
     using AutoMapper;
-    using Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter;
+    using Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter;
 
     /// <summary>
     /// Automapper type adapter implementation
@@ -12,12 +12,12 @@
         #region ITypeAdapter Members
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/>
         /// </summary>
-        /// <typeparam name="TSource"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/></typeparam>
-        /// <typeparam name="TTarget"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/></typeparam>
-        /// <param name="source"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/></param>
-        /// <returns><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/></returns>
+        /// <typeparam name="TSource"><see cref="Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/></typeparam>
+        /// <typeparam name="TTarget"><see cref="Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/></typeparam>
+        /// <param name="source"><see cref="Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/></param>
+        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/></returns>
         public TTarget Adapt<TSource, TTarget>(TSource source)
             where TSource : class
             where TTarget : class, new()
@@ -26,11 +26,11 @@
         }
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/>
         /// </summary>
-        /// <typeparam name="TTarget"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/></typeparam>
-        /// <param name="source"><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/></param>
-        /// <returns><see cref="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/></returns>
+        /// <typeparam name="TTarget"><see cref="Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/></typeparam>
+        /// <param name="source"><see cref="Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/></param>
+        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter.ITypeAdapter"/></returns>
         public TTarget Adapt<TTarget>(object source) where TTarget : class, new()
         {
             return Mapper.Map<TTarget>(source);

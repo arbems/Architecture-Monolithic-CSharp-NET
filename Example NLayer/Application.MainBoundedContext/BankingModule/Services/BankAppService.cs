@@ -1,30 +1,17 @@
-﻿//===================================================================================
-// Microsoft Developer & Platform Evangelism
-//=================================================================================== 
-// THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, 
-// EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES 
-// OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
-//===================================================================================
-// Copyright (c) Microsoft Corporation.  All Rights Reserved.
-// This code is released under the terms of the MS-LPL license, 
-// http://microsoftExampleNlayer.codeplex.com/license
-//===================================================================================
-
-
-namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services
+﻿namespace Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Transactions;
-    using Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.DTO;
-    using Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.Resources;
-    using Microsoft.Samples.ExampleNlayer.Application.Seedwork;
-    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
-    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services;
-    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
-    using Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging;
-    using Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Validator;
+    using Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.DTO;
+    using Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.Resources;
+    using Nlayer.Samples.ExampleNlayer.Application.Seedwork;
+    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
+    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services;
+    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
+    using Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging;
+    using Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Validator;
 
     /// <summary>
     /// The bank management service implementation
@@ -69,10 +56,10 @@ namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.Banking
         #region IBankAppService Members
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/>
         /// </summary>
-        /// <param name="bankAccountDTO"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></param>
-        /// <returns><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></returns>
+        /// <param name="bankAccountDTO"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></param>
+        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></returns>
         public BankAccountDTO AddBankAccount(BankAccountDTO bankAccountDTO)
         {
             if (bankAccountDTO == null || bankAccountDTO.CustomerId == Guid.Empty)
@@ -101,10 +88,10 @@ namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.Banking
         }
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/>
         /// </summary>
-        /// <param name="bankAccountId"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></param>
-        /// <returns><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></returns>
+        /// <param name="bankAccountId"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></param>
+        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></returns>
         public bool LockBankAccount(Guid bankAccountId)
         {
             //recover bank account, lock and commit changes
@@ -127,9 +114,9 @@ namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.Banking
         }
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/>
         /// </summary>
-        /// <returns><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></returns>
+        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></returns>
         public List<BankAccountDTO> FindBankAccounts()
         {
             var bankAccounts = _bankAccountRepository.GetAll();
@@ -145,11 +132,11 @@ namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.Banking
         }
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/>
         /// </summary>
-        /// <param name="fromAccount"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></param>
-        /// <param name="toAccount"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></param>
-        /// <param name="amount"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></param>
+        /// <param name="fromAccount"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></param>
+        /// <param name="toAccount"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></param>
+        /// <param name="amount"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/></param>
         public void PerformBankTransfer(BankAccountDTO fromAccount, BankAccountDTO toAccount, decimal amount)
         {
             //Application-Logic Process: 
@@ -187,10 +174,10 @@ namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.Banking
 
         }
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.BankingModule.Services.IBankAppService"/>
         /// </summary>
-        /// <param name="bankAccountId"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.IBankManagementService"/></param>
-        /// <returns><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.IBankManagementService"/></returns>
+        /// <param name="bankAccountId"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.IBankManagementService"/></param>
+        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.IBankManagementService"/></returns>
         public List<BankActivityDTO> FindBankAccountActivities(Guid bankAccountId)
         {
             var account = _bankAccountRepository.Get(bankAccountId);

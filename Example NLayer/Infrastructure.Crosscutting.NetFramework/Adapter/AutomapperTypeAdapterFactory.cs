@@ -1,9 +1,9 @@
-﻿namespace Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.NetFramework.Adapter
+﻿namespace Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.NetFramework.Adapter
 {
     using System;
     using System.Linq;
     using AutoMapper;
-    using Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter;
+    using Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter;
 
     public class AutomapperTypeAdapterFactory
         :ITypeAdapterFactory
@@ -27,7 +27,7 @@
                 {
                     if (item.FullName != "AutoMapper.SelfProfiler`2")
                         cfg.AddProfile(Activator.CreateInstance(item) as Profile);
-                } 
+                }
             });
         }
 

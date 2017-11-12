@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Validator
+﻿namespace Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Validator
 {
     using System;
     using System.Collections.Generic;
@@ -28,7 +28,7 @@
         }
 
         /// <summary>
-        /// Createt a new <paramref name="Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILog"/>
+        /// Createt a new <paramref name="Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILog"/>
         /// </summary>
         /// <returns>Created ILog</returns>
         public static IEntityValidator CreateValidator()

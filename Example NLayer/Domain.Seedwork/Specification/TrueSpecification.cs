@@ -1,17 +1,4 @@
-﻿//===================================================================================
-// Microsoft Developer & Platform Evangelism
-//=================================================================================== 
-// THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, 
-// EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES 
-// OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
-//===================================================================================
-// Copyright (c) Microsoft Corporation.  All Rights Reserved.
-// This code is released under the terms of the MS-LPL license, 
-// http://microsoftExampleNlayer.codeplex.com/license
-//===================================================================================
-
-
-namespace Microsoft.Samples.ExampleNlayer.Domain.Seedwork.Specification
+﻿namespace Nlayer.Samples.ExampleNlayer.Domain.Seedwork.Specification
 {
     using System;
     using System.Linq.Expressions;
@@ -27,9 +14,9 @@ namespace Microsoft.Samples.ExampleNlayer.Domain.Seedwork.Specification
         #region Specification overrides
 
         /// <summary>
-        /// <see cref=" Microsoft.Samples.ExampleNlayer.Domain.Seedwork.Specification.Specification{TEntity}"/>
+        /// <see cref=" Nlayer.Samples.ExampleNlayer.Domain.Seedwork.Specification.Specification{TEntity}"/>
         /// </summary>
-        /// <returns><see cref=" Microsoft.Samples.ExampleNlayer.Domain.Seedwork.Specification.Specification{TEntity}"/></returns>
+        /// <returns><see cref=" Nlayer.Samples.ExampleNlayer.Domain.Seedwork.Specification.Specification{TEntity}"/></returns>
         public override System.Linq.Expressions.Expression<Func<TEntity, bool>> SatisfiedBy()
         {
             //Create "result variable" transform adhoc execution plan in prepared plan

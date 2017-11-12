@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Samples.ExampleNlayer.Domain.Seedwork;
+using Nlayer.Samples.ExampleNlayer.Domain.Seedwork;
 
-namespace Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg
+namespace Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg
 {
     /// <summary>
     /// The bank account number value object

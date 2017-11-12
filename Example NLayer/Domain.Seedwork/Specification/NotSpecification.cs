@@ -1,22 +1,9 @@
-﻿//===================================================================================
-// Microsoft Developer & Platform Evangelism
-//=================================================================================== 
-// THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, 
-// EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES 
-// OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
-//===================================================================================
-// Copyright (c) Microsoft Corporation.  All Rights Reserved.
-// This code is released under the terms of the MS-LPL license, 
-// http://microsoftExampleNlayer.codeplex.com/license
-//===================================================================================
-
-
-namespace Microsoft.Samples.ExampleNlayer.Domain.Seedwork.Specification
+﻿namespace Nlayer.Samples.ExampleNlayer.Domain.Seedwork.Specification
 {
     using System;
     using System.Linq;
     using System.Linq.Expressions;
-    using Microsoft.Samples.ExampleNlayer.Domain.Seedwork;
+    using Nlayer.Samples.ExampleNlayer.Domain.Seedwork;
 
     /// <summary>
     /// NotEspecification convert a original
@@ -65,9 +52,9 @@ namespace Microsoft.Samples.ExampleNlayer.Domain.Seedwork.Specification
         #region Override Specification methods
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Domain.Seedwork.Specification.ISpecification{TEntity}"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.Specification.ISpecification{TEntity}"/>
         /// </summary>
-        /// <returns><see cref="Microsoft.Samples.ExampleNlayer.Domain.Seedwork.Specification.ISpecification{TEntity}"/></returns>
+        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.Specification.ISpecification{TEntity}"/></returns>
         public override Expression<Func<TEntity, bool>> SatisfiedBy()
         {
             

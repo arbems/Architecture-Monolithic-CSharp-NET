@@ -1,32 +1,19 @@
-﻿//===================================================================================
-// Microsoft Developer & Platform Evangelism
-//=================================================================================== 
-// THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, 
-// EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES 
-// OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
-//===================================================================================
-// Copyright (c) Microsoft Corporation.  All Rights Reserved.
-// This code is released under the terms of the MS-LPL license, 
-// http://microsoftExampleNlayer.codeplex.com/license
-//===================================================================================
-
-
-namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services
+﻿namespace Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.DTO;
-    using Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.Resources;
-    using Microsoft.Samples.ExampleNlayer.Application.Seedwork;
-    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
-    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.OrderAgg;
-    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg;
-    using Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging;
-    using Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Validator;
+    using Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.DTO;
+    using Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.Resources;
+    using Nlayer.Samples.ExampleNlayer.Application.Seedwork;
+    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
+    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.OrderAgg;
+    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg;
+    using Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging;
+    using Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Validator;
 
     /// <summary>
-    /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
+    /// <see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
     /// </summary>
     public class SalesAppService
         : ISalesAppService
@@ -70,11 +57,11 @@ namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModu
         #region ISalesAppService Members
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
         /// </summary>
-        /// <param name="pageIndex"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
-        /// <param name="pageCount"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
-        /// <returns><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></returns>
+        /// <param name="pageIndex"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
+        /// <param name="pageCount"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
+        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></returns>
         public List<OrderListDTO> FindOrders(int pageIndex, int pageCount)
         {
             if (pageIndex < 0 || pageCount <= 0)
@@ -93,11 +80,11 @@ namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModu
                 return null;
         }
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
         /// </summary>
-        /// <param name="dateFrom"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
-        /// <param name="dateTo"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
-        /// <returns><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></returns>
+        /// <param name="dateFrom"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
+        /// <param name="dateTo"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
+        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></returns>
         public List<OrderListDTO> FindOrders(DateTime? dateFrom, DateTime? dateTo)
         {
             //create the specification ( how to filter orders from dates..)
@@ -117,10 +104,10 @@ namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModu
 
         }
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
         /// </summary>
-        /// <param name="customerId"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
-        /// <returns><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></returns>
+        /// <param name="customerId"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
+        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></returns>
         public List<OrderListDTO> FindOrders(Guid customerId)
         {
             var orders = _orderRepository.GetFiltered(o => o.CustomerId == customerId);
@@ -136,11 +123,11 @@ namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModu
 
         }
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
         /// </summary>
-        /// <param name="pageIndex"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
-        /// <param name="pageCount"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
-        /// <returns><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></returns>
+        /// <param name="pageIndex"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
+        /// <param name="pageCount"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
+        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></returns>
         public List<ProductDTO> FindProducts(int pageIndex, int pageCount)
         {
             if (pageIndex < 0 || pageCount <= 0)
@@ -160,10 +147,10 @@ namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModu
         }
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
         /// </summary>
-        /// <param name="text"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
-        /// <returns><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></returns>
+        /// <param name="text"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
+        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></returns>
         public List<ProductDTO> FindProducts(string text)
         {
             //create the specification ( howto find products for any string ) 
@@ -177,9 +164,9 @@ namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModu
         }
 
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
         /// </summary>
-        /// <param name="orderDto"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
+        /// <param name="orderDto"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
         public OrderDTO AddNewOrder(OrderDTO orderDto)
         {
             //if orderdto data is not valid
@@ -213,9 +200,9 @@ namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModu
             }
         }
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
         /// </summary>
-        /// <param name="softwareDTO"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
+        /// <param name="softwareDTO"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
         public SoftwareDTO AddNewSoftware(SoftwareDTO softwareDTO)
         {
             if (softwareDTO == null)
@@ -238,9 +225,9 @@ namespace Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModu
             return newSoftware.ProjectedAs<SoftwareDTO>();
         }
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/>
         /// </summary>
-        /// <param name="bookDTO"><see cref="Microsoft.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
+        /// <param name="bookDTO"><see cref="Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services.ISalesAppService"/></param>
         public BookDTO AddNewBook(BookDTO bookDTO)
         {
             if (bookDTO == null)

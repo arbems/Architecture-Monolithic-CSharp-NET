@@ -1,34 +1,21 @@
-﻿//===================================================================================
-// Microsoft Developer & Platform Evangelism
-//=================================================================================== 
-// THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, 
-// EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES 
-// OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
-//===================================================================================
-// Copyright (c) Microsoft Corporation.  All Rights Reserved.
-// This code is released under the terms of the MS-LPL license, 
-// http://microsoftExampleNlayer.codeplex.com/license
-//===================================================================================
-
-
-namespace Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services
+﻿namespace Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services
 {
-    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
-    using Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.Resources;
+    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
+    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.Resources;
     using System;
 
     /// <summary>
     /// Bank transfer service implementation. 
-    /// <see cref="Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.Aggregates.BankAccounts.IBankTransferService"/>
+    /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.Aggregates.BankAccounts.IBankTransferService"/>
     /// </summary>
     public class BankTransferService : IBankTransferService
     {
         /// <summary>
-        /// <see cref="Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services.IBankTransferService"/>
+        /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services.IBankTransferService"/>
         /// </summary>
-        /// <param name="amount"> <see cref="Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services.IBankTransferService"/></param>
-        /// <param name="originAccount"> <see cref="Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services.IBankTransferService"/></param>
-        /// <param name="destinationAccount"> <see cref="Microsoft.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services.IBankTransferService"/></param>
+        /// <param name="amount"> <see cref="Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services.IBankTransferService"/></param>
+        /// <param name="originAccount"> <see cref="Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services.IBankTransferService"/></param>
+        /// <param name="destinationAccount"> <see cref="Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services.IBankTransferService"/></param>
         public void PerformTransfer(decimal amount, BankAccount originAccount, BankAccount destinationAccount)
         {
             if (originAccount != null && destinationAccount != null)

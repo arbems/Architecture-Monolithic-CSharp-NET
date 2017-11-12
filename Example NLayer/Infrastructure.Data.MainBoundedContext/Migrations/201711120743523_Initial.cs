@@ -1,4 +1,4 @@
-namespace Microsoft.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.Migrations
+namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

@@ -1,6 +1,6 @@
-﻿namespace Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.NetFramework.Logging
+﻿namespace Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.NetFramework.Logging
 {
-    using Microsoft.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging;
+    using Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging;
 
     /// <summary>
     /// A Trace Source base, log factory

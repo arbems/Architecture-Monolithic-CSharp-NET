@@ -82,9 +82,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201711111659145_Initial.cs" />
-    <Compile Include="Migrations\201711111659145_Initial.Designer.cs">
-      <DependentUpon>201711111659145_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201711120743523_Initial.cs" />
+    <Compile Include="Migrations\201711120743523_Initial.Designer.cs">
+      <DependentUpon>201711120743523_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\GlobalSuppressions.cs" />
@@ -132,8 +132,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201711111659145_Initial.resx">
-      <DependentUpon>201711111659145_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201711120743523_Initial.resx">
+      <DependentUpon>201711120743523_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

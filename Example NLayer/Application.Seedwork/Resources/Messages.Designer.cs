@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Microsoft.Samples.ExampleNlayer.Application.Seedwork.Resources {
+namespace Nlayer.Samples.ExampleNlayer.Application.Seedwork.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Microsoft.Samples.ExampleNlayer.Application.Seedwork.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Microsoft.Samples.ExampleNlayer.Application.Seedwork.Resources.Messages", typeof(Messages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Nlayer.Samples.ExampleNlayer.Application.Seedwork.Resources.Messages", typeof(Messages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
