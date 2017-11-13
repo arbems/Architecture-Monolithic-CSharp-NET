@@ -7,9 +7,9 @@ using System;
 [assembly: AssemblyTitle("Infrastructure.Data.Seedwork")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Infrastructure.Data.Seedwork")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2011")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

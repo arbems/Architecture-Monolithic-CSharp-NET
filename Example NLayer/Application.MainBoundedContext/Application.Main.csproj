@@ -72,21 +72,21 @@
     <Compile Include="ERPModule\Services\ISalesAppService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Application.MainBoundedContext.DTO\Application.MainBoundedContext.DTO.csproj">
+    <ProjectReference Include="..\Application.MainBoundedContext.DTO\Application.Main.DTO.csproj">
       <Project>{62FB7287-FE06-4E8B-AB66-25603D9E2610}</Project>
-      <Name>Application.MainBoundedContext.DTO</Name>
+      <Name>Application.Main.DTO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Application.Seedwork\Application.Seedwork.csproj">
+    <ProjectReference Include="..\Application.Seedwork\Application.Core.csproj">
       <Project>{7F17BC81-B7D1-46D8-A94B-FDBAE17F94B7}</Project>
-      <Name>Application.Seedwork</Name>
+      <Name>Application.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain.MainBoundedContext\Domain.MainBoundedContext.csproj">
+    <ProjectReference Include="..\Domain.MainBoundedContext\Domain.Main.csproj">
       <Project>{F7F15F85-A171-4EDC-B507-03A8D80915A8}</Project>
-      <Name>Domain.MainBoundedContext</Name>
+      <Name>Domain.Main</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain.Seedwork\Domain.Seedwork.csproj">
+    <ProjectReference Include="..\Domain.Seedwork\Domain.Core.csproj">
       <Project>{04D675A3-B794-44BD-A25C-673BB44739CB}</Project>
-      <Name>Domain.Seedwork</Name>
+      <Name>Domain.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Infrastructure.Crosscutting\Infrastructure.Crosscutting.csproj">
       <Project>{106C7F00-C03F-4E29-87AF-ACD1BA292078}</Project>

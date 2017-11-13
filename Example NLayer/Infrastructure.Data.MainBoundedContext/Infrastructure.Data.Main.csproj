@@ -106,17 +106,17 @@
     <Compile Include="UnitOfWork\Mapping\SoftwareEntityTypeConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Domain.MainBoundedContext\Domain.MainBoundedContext.csproj">
+    <ProjectReference Include="..\Domain.MainBoundedContext\Domain.Main.csproj">
       <Project>{F7F15F85-A171-4EDC-B507-03A8D80915A8}</Project>
-      <Name>Domain.MainBoundedContext</Name>
+      <Name>Domain.Main</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain.Seedwork\Domain.Seedwork.csproj">
+    <ProjectReference Include="..\Domain.Seedwork\Domain.Core.csproj">
       <Project>{04D675A3-B794-44BD-A25C-673BB44739CB}</Project>
-      <Name>Domain.Seedwork</Name>
+      <Name>Domain.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure.Data.Seedwork\Infrastructure.Data.Seedwork.csproj">
+    <ProjectReference Include="..\Infrastructure.Data.Seedwork\Infrastructure.Data.Core.csproj">
       <Project>{09AAF2C8-47DC-4F12-A3A0-130DCDB1495B}</Project>
-      <Name>Infrastructure.Data.Seedwork</Name>
+      <Name>Infrastructure.Data.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
