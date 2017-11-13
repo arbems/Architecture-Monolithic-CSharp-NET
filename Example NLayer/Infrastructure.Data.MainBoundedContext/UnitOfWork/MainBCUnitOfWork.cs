@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.UnitOfWork
+﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.UnitOfWork
 {
     using System.Collections.Generic;
     using System.Linq;
@@ -8,18 +8,18 @@
     using System.Data.Entity.ModelConfiguration.Conventions;
 
     
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CountryAgg;
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.OrderAgg;
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg;
-    using Nlayer.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.UnitOfWork.Mapping;
-    using Nlayer.Samples.ExampleNlayer.Infrastructure.Data.Seedwork;
+    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg;
+    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg;
+    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
+    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.OrderAgg;
+    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.ProductAgg;
+    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.UnitOfWork.Mapping;
+    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Core;
 
     public class MainBCUnitOfWork
         :DbContext,IQueryableUnitOfWork
     {
-        public MainBCUnitOfWork() : base("ExampleNlayer") { }
+        public MainBCUnitOfWork() : base("NLayerApp") { }
 
         #region IDbSet Members
 

@@ -1,10 +1,10 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CountryAgg
+﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg
 {
-    using Nlayer.Samples.ExampleNlayer.Domain.Seedwork;
+    using Nlayer.Samples.NLayerApp.Domain.Core;
 
     /// <summary>
     /// Base contract for country repository
-    /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{Country}"/>
+    /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{Country}"/>
     /// </summary>
     public interface ICountryRepository
         :IRepository<Country>

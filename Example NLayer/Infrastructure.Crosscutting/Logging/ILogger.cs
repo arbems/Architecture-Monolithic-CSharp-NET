@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging
+﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging
 {
     using System;
 

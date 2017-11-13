@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg
+namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.ProductAgg
 {
 
     /// <summary>

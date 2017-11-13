@@ -1,7 +1,7 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Infrastructure.Data.Seedwork
+﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Core
 {
     using System.Data.Entity;
-    using Nlayer.Samples.ExampleNlayer.Domain.Seedwork;
+    using Nlayer.Samples.NLayerApp.Domain.Core;
 
     /// <summary>
     /// The UnitOfWork contract for EF implementation

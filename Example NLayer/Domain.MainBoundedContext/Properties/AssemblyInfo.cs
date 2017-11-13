@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 using System;
 
 
-[assembly: AssemblyTitle("Domain.MainBoundedContext")]
+[assembly: AssemblyTitle("Domain.Main")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Domain.MainBoundedContext")]
+[assembly: AssemblyProduct("Domain.Main")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging
+﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging
 {
     /// <summary>
     /// Log Factory
@@ -23,7 +23,7 @@
         }
 
         /// <summary>
-        /// Createt a new <paramref name="Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging.ILog"/>
+        /// Createt a new <paramref name="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILog"/>
         /// </summary>
         /// <returns>Created ILog</returns>
         public static ILogger CreateLog()

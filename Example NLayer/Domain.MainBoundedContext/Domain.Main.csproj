@@ -8,7 +8,7 @@
     <ProjectGuid>{F7F15F85-A171-4EDC-B507-03A8D80915A8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Microsoft.Samples.NLayerApp.Domain.MainBoundedContext</RootNamespace>
+    <RootNamespace>Nlayer.Samples.NLayerApp.Domain.Main</RootNamespace>
     <AssemblyName>NLayerApp.Domain.MainBoundedContext</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -3,11 +3,11 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System;
 
-[assembly: AssemblyTitle("Domain.Seedwork")]
+[assembly: AssemblyTitle("Domain.Core")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Domain.Seedwork")]
+[assembly: AssemblyProduct("Domain.Core")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

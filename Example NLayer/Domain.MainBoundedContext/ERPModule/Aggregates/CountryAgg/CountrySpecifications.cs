@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Nlayer.Samples.ExampleNlayer.Domain.Seedwork.Specification;
+using Nlayer.Samples.NLayerApp.Domain.Core.Specification;
 
-namespace Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CountryAgg
+namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg
 {
     /// <summary>
     /// A list of country specifications. 
     /// You can learn about Specifications, Enhanced Query Objects or repository methods
-    /// reading our Architecture guide and checking the DesignNotes.txt in Domain.Seedwork project
+    /// reading our Architecture guide and checking the DesignNotes.txt in Domain.Core project
     /// </summary>
     public static class CountrySpecifications
     {

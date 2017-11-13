@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter
+﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Adapter
 {
     using System;
     using System.Collections.Generic;

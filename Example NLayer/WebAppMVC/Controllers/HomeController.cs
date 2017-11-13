@@ -1,4 +1,4 @@
-﻿using Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services;
+﻿using Nlayer.Samples.NLayerApp.Application.Main.ERPModule.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;

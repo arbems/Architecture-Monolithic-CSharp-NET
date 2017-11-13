@@ -1,21 +1,21 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services
+﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Services
 {
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.Resources;
+    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg;
+    using Nlayer.Samples.NLayerApp.Domain.Main.Resources;
     using System;
 
     /// <summary>
     /// Bank transfer service implementation. 
-    /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.Aggregates.BankAccounts.IBankTransferService"/>
+    /// <see cref="Nlayer.Samples.NLayerApp.Domain.Main.Aggregates.BankAccounts.IBankTransferService"/>
     /// </summary>
     public class BankTransferService : IBankTransferService
     {
         /// <summary>
-        /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services.IBankTransferService"/>
+        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Services.IBankTransferService"/>
         /// </summary>
-        /// <param name="amount"> <see cref="Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services.IBankTransferService"/></param>
-        /// <param name="originAccount"> <see cref="Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services.IBankTransferService"/></param>
-        /// <param name="destinationAccount"> <see cref="Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Services.IBankTransferService"/></param>
+        /// <param name="amount"> <see cref="Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Services.IBankTransferService"/></param>
+        /// <param name="originAccount"> <see cref="Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Services.IBankTransferService"/></param>
+        /// <param name="destinationAccount"> <see cref="Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Services.IBankTransferService"/></param>
         public void PerformTransfer(decimal amount, BankAccount originAccount, BankAccount destinationAccount)
         {
             if (originAccount != null && destinationAccount != null)

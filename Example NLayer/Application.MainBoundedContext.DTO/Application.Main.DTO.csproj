@@ -8,7 +8,7 @@
     <ProjectGuid>{62FB7287-FE06-4E8B-AB66-25603D9E2610}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Microsoft.Samples.NLayerApp.Application.MainBoundedContext.DTO</RootNamespace>
+    <RootNamespace>Nlayer.Samples.NLayerApp.Application.Main.DTO</RootNamespace>
     <AssemblyName>NLayerApp.Application.MainBoundedContext.DTO</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

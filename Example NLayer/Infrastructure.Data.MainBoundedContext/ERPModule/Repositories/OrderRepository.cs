@@ -1,16 +1,16 @@
 ﻿
 
-namespace Nlayer.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.ERPModule.Repositories
+namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.ERPModule.Repositories
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Linq.Expressions;
     using System.Data.Entity;
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.OrderAgg;
-    using Nlayer.Samples.ExampleNlayer.Infrastructure.Data.Seedwork;
-    using Nlayer.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.UnitOfWork;
-    using Nlayer.Samples.ExampleNlayer.Domain.Seedwork.Specification;
+    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.OrderAgg;
+    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Core;
+    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.UnitOfWork;
+    using Nlayer.Samples.NLayerApp.Domain.Core.Specification;
 
     /// <summary>
     /// The order repository implementation

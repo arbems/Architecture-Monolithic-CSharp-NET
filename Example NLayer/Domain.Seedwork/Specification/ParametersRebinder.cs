@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Domain.Seedwork.Specification
+﻿namespace Nlayer.Samples.NLayerApp.Domain.Core.Specification
 {
     using System.Collections.Generic;
     using System.Linq.Expressions;

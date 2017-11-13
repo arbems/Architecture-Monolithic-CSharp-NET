@@ -1,10 +1,10 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg
+﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.ProductAgg
 {
-    using Nlayer.Samples.ExampleNlayer.Domain.Seedwork;
+    using Nlayer.Samples.NLayerApp.Domain.Core;
 
     /// <summary>
     /// Base contract for product repository
-    /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{Product}"/>
+    /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{Product}"/>
     /// </summary>
     public interface  IProductRepository
         :IRepository<Product>

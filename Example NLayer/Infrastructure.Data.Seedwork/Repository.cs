@@ -1,13 +1,13 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Infrastructure.Data.Seedwork
+﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Core
 {
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
     using System.Linq;
 
-    using Nlayer.Samples.ExampleNlayer.Domain.Seedwork;
-    using Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Logging;
-    using Nlayer.Samples.ExampleNlayer.Infrastructure.Data.Seedwork.Resources;
+    using Nlayer.Samples.NLayerApp.Domain.Core;
+    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging;
+    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Core.Resources;
 
     /// <summary>
     /// Repository base class
@@ -41,7 +41,7 @@
         #region IRepository Members
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/>
+        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/>
         /// </summary>
         public IUnitOfWork UnitOfWork
         {
@@ -52,9 +52,9 @@
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/>
+        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/>
         /// </summary>
-        /// <param name="item"><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></param>
+        /// <param name="item"><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></param>
         public virtual void Add(TEntity item)
         {
 
@@ -69,9 +69,9 @@
             
         }
         /// <summary>
-        /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/>
+        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/>
         /// </summary>
-        /// <param name="item"><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></param>
+        /// <param name="item"><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></param>
         public virtual void Remove(TEntity item)
         {
             if (item != (TEntity)null)
@@ -90,9 +90,9 @@
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/>
+        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/>
         /// </summary>
-        /// <param name="item"><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></param>
+        /// <param name="item"><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></param>
         public virtual void TrackItem(TEntity item)
         {
             if (item != (TEntity)null)
@@ -105,9 +105,9 @@
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/>
+        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/>
         /// </summary>
-        /// <param name="item"><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></param>
+        /// <param name="item"><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></param>
         public virtual void Modify(TEntity item)
         {
             if (item != (TEntity)null)
@@ -120,10 +120,10 @@
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/>
+        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/>
         /// </summary>
-        /// <param name="id"><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></param>
-        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></returns>
+        /// <param name="id"><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></param>
+        /// <returns><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></returns>
         public virtual TEntity Get(Guid id)
         {
             if (id != Guid.Empty)
@@ -132,31 +132,31 @@
                 return null;
         }
         /// <summary>
-        /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/>
+        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/>
         /// </summary>
-        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></returns>
+        /// <returns><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></returns>
         public virtual IEnumerable<TEntity> GetAll()
         {
             return GetSet();
         }
         /// <summary>
-        /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/>
+        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/>
         /// </summary>
-        /// <param name="specification"><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></param>
-        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></returns>
-        public virtual IEnumerable<TEntity> AllMatching(Domain.Seedwork.Specification.ISpecification<TEntity> specification)
+        /// <param name="specification"><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></param>
+        /// <returns><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></returns>
+        public virtual IEnumerable<TEntity> AllMatching(Domain.Core.Specification.ISpecification<TEntity> specification)
         {
             return GetSet().Where(specification.SatisfiedBy());
         }
         /// <summary>
-        /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/>
+        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/>
         /// </summary>
-        /// <typeparam name="S"><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></typeparam>
-        /// <param name="pageIndex"><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></param>
-        /// <param name="pageCount"><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></param>
-        /// <param name="orderByExpression"><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></param>
-        /// <param name="ascending"><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></param>
-        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></returns>
+        /// <typeparam name="S"><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></typeparam>
+        /// <param name="pageIndex"><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></param>
+        /// <param name="pageCount"><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></param>
+        /// <param name="orderByExpression"><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></param>
+        /// <param name="ascending"><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></param>
+        /// <returns><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></returns>
         public virtual IEnumerable<TEntity> GetPaged<KProperty>(int pageIndex, int pageCount, System.Linq.Expressions.Expression<Func<TEntity, KProperty>> orderByExpression, bool ascending)
         {
             var set = GetSet();
@@ -175,20 +175,20 @@
             }
         }
         /// <summary>
-        /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/>
+        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/>
         /// </summary>
-        /// <param name="filter"><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></param>
-        /// <returns><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></returns>
+        /// <param name="filter"><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></param>
+        /// <returns><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></returns>
         public virtual IEnumerable<TEntity> GetFiltered(System.Linq.Expressions.Expression<Func<TEntity, bool>> filter)
         {
             return GetSet().Where(filter);
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/>
+        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/>
         /// </summary>
-        /// <param name="persisted"><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></param>
-        /// <param name="current"><see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{TValueObject}"/></param>
+        /// <param name="persisted"><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></param>
+        /// <param name="current"><see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{TValueObject}"/></param>
         public virtual void Merge(TEntity persisted, TEntity current)
         {
             _UnitOfWork.ApplyCurrentValues(persisted, current);

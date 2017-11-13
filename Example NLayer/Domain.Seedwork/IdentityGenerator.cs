@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Domain.Seedwork
+﻿namespace Nlayer.Samples.NLayerApp.Domain.Core
 {
     using System;
     using System.Collections.Generic;

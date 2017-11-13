@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Infrastructure.Data.Seedwork
+﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Core
 {
     using System;
     using System.Collections.Generic;

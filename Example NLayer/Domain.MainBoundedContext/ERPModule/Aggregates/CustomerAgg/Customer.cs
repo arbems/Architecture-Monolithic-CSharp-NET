@@ -1,12 +1,12 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg
+﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
-    using Nlayer.Samples.ExampleNlayer.Domain.Seedwork;
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.Resources;
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CountryAgg;
+    using Nlayer.Samples.NLayerApp.Domain.Core;
+    using Nlayer.Samples.NLayerApp.Domain.Main.Resources;
+    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg;
 
     /// <summary>
     /// Aggregate root for Customer Aggregate.

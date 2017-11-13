@@ -1,21 +1,21 @@
-namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.Migrations
+namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.Migrations
 {
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CountryAgg;
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
+    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg;
+    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg;
+    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Nlayer.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.UnitOfWork.MainBCUnitOfWork>
+    internal sealed class Configuration : DbMigrationsConfiguration<Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.UnitOfWork.MainBCUnitOfWork>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(Nlayer.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.UnitOfWork.MainBCUnitOfWork context)
+        protected override void Seed(Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.UnitOfWork.MainBCUnitOfWork context)
         {
             //NOTE: Each time you change the content of this method, ALL the records will be added to the database!!
             //If you change this method, it is better to delete de whole database first.

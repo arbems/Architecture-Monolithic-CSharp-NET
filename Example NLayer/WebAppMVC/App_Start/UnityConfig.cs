@@ -1,9 +1,9 @@
-using Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services;
-using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CountryAgg;
-using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
-using Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Adapter;
-using Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.NetFramework.Adapter;
-using Nlayer.Samples.ExampleNlayer.Infrastructure.Data.MainBoundedContext.ERPModule.Repositories;
+using Nlayer.Samples.NLayerApp.Application.Main.ERPModule.Services;
+using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg;
+using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
+using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Adapter;
+using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Adapter;
+using Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.ERPModule.Repositories;
 using System;
 using System.Web;
 using Unity;
@@ -58,9 +58,9 @@ namespace WebAppMVC
             }));
 
             //-> Adapters
-            container.RegisterType<ITypeAdapterFactory, AutomapperTypeAdapterFactory>(new ContainerControlledLifetimeManager());
-            var typeAdapterFactory = container.Resolve<ITypeAdapterFactory>();
-            TypeAdapterFactory.SetCurrent(typeAdapterFactory);
+            //container.RegisterType<ITypeAdapterFactory, AutomapperTypeAdapterFactory>(new ContainerControlledLifetimeManager());
+            //var typeAdapterFactory = container.Resolve<ITypeAdapterFactory>();
+            //TypeAdapterFactory.SetCurrent(typeAdapterFactory);
         }
     }
 }

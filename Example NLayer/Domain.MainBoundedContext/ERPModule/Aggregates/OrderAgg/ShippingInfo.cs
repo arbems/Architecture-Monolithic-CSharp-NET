@@ -1,10 +1,10 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.OrderAgg
+﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.OrderAgg
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Nlayer.Samples.ExampleNlayer.Domain.Seedwork;
+    using Nlayer.Samples.NLayerApp.Domain.Core;
 
     /// <summary>
     /// Shipping information 

@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.DTO
+﻿namespace Nlayer.Samples.NLayerApp.Application.Main.DTO
 {
 
     using System;

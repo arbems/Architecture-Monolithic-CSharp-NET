@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Infrastructure.Crosscutting.Validator
+﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Validator
 {
     using System;
     using System.Collections.Generic;

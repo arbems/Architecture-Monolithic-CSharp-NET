@@ -1,12 +1,12 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg
+﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg
 {
     using System;
-    using Nlayer.Samples.ExampleNlayer.Domain.Seedwork.Specification;
+    using Nlayer.Samples.NLayerApp.Domain.Core.Specification;
 
     /// <summary>
     /// A list of bank account specifications. You can learn
     /// about Specifications, Enhanced Query Objects or repository methods
-    /// in DesignNotes.txt in Domain.Seedwork project
+    /// in DesignNotes.txt in Domain.Core project
     /// </summary>
     public static class BankAccountSpecifications
     {

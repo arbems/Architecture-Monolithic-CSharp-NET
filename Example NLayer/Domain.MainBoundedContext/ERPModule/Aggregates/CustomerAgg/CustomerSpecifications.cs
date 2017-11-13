@@ -1,16 +1,16 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg
+﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg
 {
 
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Nlayer.Samples.ExampleNlayer.Domain.Seedwork.Specification;
+    using Nlayer.Samples.NLayerApp.Domain.Core.Specification;
 
     /// <summary>
     /// A list of customer specifications. You can learn
     /// about Specifications, Enhanced Query Objects or repository methods
-    /// reading our Architecture guide and checking the DesignNotes.txt in Domain.Seedwork project
+    /// reading our Architecture guide and checking the DesignNotes.txt in Domain.Core project
     /// </summary>
     public static class CustomerSpecifications
     {

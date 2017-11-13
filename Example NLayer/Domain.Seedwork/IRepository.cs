@@ -1,11 +1,11 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Domain.Seedwork
+﻿namespace Nlayer.Samples.NLayerApp.Domain.Core
 {
     using System;
     using System.Collections.Generic;
     using System.Linq.Expressions;
 
-    using Nlayer.Samples.ExampleNlayer.Domain.Seedwork;
-    using Nlayer.Samples.ExampleNlayer.Domain.Seedwork.Specification;
+    using Nlayer.Samples.NLayerApp.Domain.Core;
+    using Nlayer.Samples.NLayerApp.Domain.Core.Specification;
 
     /// <summary>
     /// Base interface for implement a "Repository Pattern", for

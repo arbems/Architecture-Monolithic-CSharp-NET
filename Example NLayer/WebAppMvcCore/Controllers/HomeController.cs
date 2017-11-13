@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebAppMvcCore.Models;
-using Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.ERPModule.Services;
+using Nlayer.Samples.NLayerApp.Application.Main.ERPModule.Services;
 
 namespace WebAppMvcCore.Controllers
 {

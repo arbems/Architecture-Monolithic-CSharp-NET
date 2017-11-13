@@ -3,11 +3,11 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System;
 
-[assembly: AssemblyTitle("Infrastructure.Data.MainBoundedContext")]
+[assembly: AssemblyTitle("Infrastructure.Data.Main")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Infrastructure.Data.MainBoundedContext")]
+[assembly: AssemblyProduct("Infrastructure.Data.Main")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

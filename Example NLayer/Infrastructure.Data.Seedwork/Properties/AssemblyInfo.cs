@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 using System;
 
 
-[assembly: AssemblyTitle("Infrastructure.Data.Seedwork")]
+[assembly: AssemblyTitle("Infrastructure.Data.Core")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Infrastructure.Data.Seedwork")]
+[assembly: AssemblyProduct("Infrastructure.Data.Core")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

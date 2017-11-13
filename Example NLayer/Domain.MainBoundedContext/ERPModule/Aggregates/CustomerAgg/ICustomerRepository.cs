@@ -1,12 +1,12 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg
+﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg
 {
 
     using System.Collections.Generic;
-    using Nlayer.Samples.ExampleNlayer.Domain.Seedwork;
+    using Nlayer.Samples.NLayerApp.Domain.Core;
 
     /// <summary>
     /// Customer repository contract
-    /// <see cref="Nlayer.Samples.ExampleNlayer.Domain.Seedwork.IRepository{Customer}"/>
+    /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.IRepository{Customer}"/>
     /// </summary>
     public interface ICustomerRepository
         :IRepository<Customer>

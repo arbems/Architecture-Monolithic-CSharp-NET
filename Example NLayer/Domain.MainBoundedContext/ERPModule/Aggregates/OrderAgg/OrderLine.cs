@@ -1,12 +1,12 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.OrderAgg
+﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.OrderAgg
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
-    using Nlayer.Samples.ExampleNlayer.Domain.Seedwork;
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.Resources;
-    using Nlayer.Samples.ExampleNlayer.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg;
+    using Nlayer.Samples.NLayerApp.Domain.Core;
+    using Nlayer.Samples.NLayerApp.Domain.Main.Resources;
+    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.ProductAgg;
 
     /// <summary>
     /// The order line representation

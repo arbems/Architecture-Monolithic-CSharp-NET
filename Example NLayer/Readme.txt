@@ -2,11 +2,11 @@
 * Update the data connection in App.config and Web.config
 
 1.Enable migrations Entity Framework Code First:
-	Enable-Migrations -StartUpProjectName Infrastructure.Data.MainBoundedContext
+	Enable-Migrations -StartUpProjectName Infrastructure.Data.Main
 2.Add migration "Initial":
-	Add-Migration -StartUpProjectName Infrastructure.Data.MainBoundedContext
+	Add-Migration -StartUpProjectName Infrastructure.Data.Main
 3.Update database:
-	Update-database -StartUpProjectName Infrastructure.Data.MainBoundedContext
+	Update-database -StartUpProjectName Infrastructure.Data.Main
 
 
 * Implement Dependency injection (Unity)

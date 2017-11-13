@@ -9,7 +9,7 @@ MODULES are like chapters (modules) in a book (BC-MODEL).
  
 IMPORTANT!!: Each MODEL depends on your specific DOMAIN. In our case, our fictitious DOMAIN is very simple 
 because it is a sample-app, not a real app. Therefore, for our DOMAIN, we chose that we initially have
-a single MainBoundedContext and two Modules (BankingModule and ERPModule) which share the same MODEL.
+a single Main and two Modules (BankingModule and ERPModule) which share the same MODEL.
 But of course, different DOMAINS have different MODELS and MODULES. In a large business app, probably
 the ERP system would be a BOUNDED-CONTEXT and the Banking system would be another BOUNDED-CONTEXT, as both
 concepts are really different in reality.
@@ -18,7 +18,7 @@ not to teach how to apply DDD (Ubiquitous Language, DDD practices, etc.). There 
 Your BC, MODEL & MODULES will depend on your specific DOMAINS and you'll have to determine that 
 while talking with your DOMAIN experts and business users.
  
-Also, we called our BC as 'MainBoundedContext' because it is an example and we want explicitely to show what
+Also, we called our BC as 'Main' because it is an example and we want explicitely to show what
 is our Bounded-Context related to the MODEL. Usually, in a real project, you will simply name it with a meaningful name for your system, 
 from your ubiquitous language.
  
