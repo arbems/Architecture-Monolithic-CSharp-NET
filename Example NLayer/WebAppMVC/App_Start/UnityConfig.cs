@@ -58,9 +58,9 @@ namespace WebAppMVC
             }));
 
             //-> Adapters
-            //container.RegisterType<ITypeAdapterFactory, AutomapperTypeAdapterFactory>(new ContainerControlledLifetimeManager());
-            //var typeAdapterFactory = container.Resolve<ITypeAdapterFactory>();
-            //TypeAdapterFactory.SetCurrent(typeAdapterFactory);
+            container.RegisterType<ITypeAdapterFactory, AutomapperTypeAdapterFactory>(new ContainerControlledLifetimeManager());
+            var typeAdapterFactory = container.Resolve<ITypeAdapterFactory>();
+            TypeAdapterFactory.SetCurrent(typeAdapterFactory);
         }
     }
 }

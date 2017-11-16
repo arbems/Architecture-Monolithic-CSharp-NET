@@ -6,6 +6,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Nlayer.Samples.NLayerApp.Application.Main.ERPModule.Services;
+using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg;
+using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
+using Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.ERPModule.Repositories;
+using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Adapter;
+using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Adapter;
 
 namespace WebAppMvcCore
 {
@@ -22,6 +28,16 @@ namespace WebAppMvcCore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddTransient<ICustomerAppService, CustomerAppService>();
+            services.AddTransient<ICountryRepository, CountryRepository>();
+            services.AddTransient<ICustomerRepository, CustomerRepository>();
+
+            //-> Adapters
+            //services.AddTransient<ITypeAdapterFactory, AutomapperTypeAdapterFactory>();
+            //var sp = services.BuildServiceProvider();
+            //var typeAdapterFactory = sp.GetService<ITypeAdapterFactory>();
+            //TypeAdapterFactory.SetCurrent(typeAdapterFactory);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

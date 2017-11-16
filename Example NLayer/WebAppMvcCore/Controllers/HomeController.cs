@@ -20,6 +20,8 @@ namespace WebAppMvcCore.Controllers
 
         public IActionResult Index()
         {
+            var items = customerAppService.FindCountries(0, 100);
+
             return View();
         }
 

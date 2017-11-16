@@ -15,9 +15,12 @@
   <ItemGroup>
     <ProjectReference Include="..\Application.MainBoundedContext.DTO\Application.Main.DTO.csproj" />
     <ProjectReference Include="..\Application.MainBoundedContext\Application.Main.csproj" />
-    <ProjectReference Include="..\Application.Seedwork\Application.Core.csproj" />
     <ProjectReference Include="..\Domain.MainBoundedContext\Domain.Main.csproj" />
     <ProjectReference Include="..\Domain.Seedwork\Domain.Core.csproj" />
+    <ProjectReference Include="..\Infrastructure.Crosscutting.NetFramework\Infrastructure.Crosscutting.NetFramework.csproj" />
+    <ProjectReference Include="..\Infrastructure.Crosscutting\Infrastructure.Crosscutting.csproj" />
+    <ProjectReference Include="..\Infrastructure.Data.MainBoundedContext\Infrastructure.Data.Main.csproj" />
+    <ProjectReference Include="..\Infrastructure.Data.Seedwork\Infrastructure.Data.Core.csproj" />
   </ItemGroup>
 
 </Project>

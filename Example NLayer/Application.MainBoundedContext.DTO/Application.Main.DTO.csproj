@@ -68,6 +68,7 @@
     <Compile Include="OrderLineDTO.cs" />
     <Compile Include="OrderListDTO.cs" />
     <Compile Include="ProductDTO.cs" />
+    <Compile Include="Profiles\BankingProfile.cs" />
     <Compile Include="Profiles\ErpProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SoftwareDTO.cs" />
