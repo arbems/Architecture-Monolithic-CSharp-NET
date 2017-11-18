@@ -19,7 +19,9 @@
     public class MainBCUnitOfWork
         :DbContext,IQueryableUnitOfWork
     {
-        public MainBCUnitOfWork() : base("NLayerApp") { }
+        public MainBCUnitOfWork() : base("NLayerApp") {
+            var ensureDLLIsCopied = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
+        }
 
         #region IDbSet Members
 
