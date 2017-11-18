@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Nlayer.Samples.NLayerApp.DistributedServices.Core</RootNamespace>
-    <AssemblyName>NLayerApp.DistributedServices.Seedwork</AssemblyName>
+    <AssemblyName>NLayerApp.DistributedServices.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>

@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Nlayer.Samples.NLayerApp.Domain.Main</RootNamespace>
-    <AssemblyName>NLayerApp.Domain.MainBoundedContext</AssemblyName>
+    <AssemblyName>NLayerApp.Domain.Main</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>

@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Nlayer.Samples.NLayerApp.Infrastructure.Data.Core</RootNamespace>
-    <AssemblyName>NLayerApp.Infrastructure.Data.Seedwork</AssemblyName>
+    <AssemblyName>NLayerApp.Infrastructure.Data.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
