@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Microsoft.Samples.NLayerApp.DistributedServices.MainBoundedContext</RootNamespace>
-    <AssemblyName>NLayerApp.DistributedServices.Main</AssemblyName>
+    <RootNamespace>Microsoft.Samples.NLayerApp.Services.Main</RootNamespace>
+    <AssemblyName>NLayerApp.Services.Main</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
     <SccProjectName>
@@ -202,27 +202,27 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Application.MainBoundedContext.DTO\Application.Main.DTO.csproj">
+    <ProjectReference Include="..\Application.Main.DTO\Application.Main.DTO.csproj">
       <Project>{62FB7287-FE06-4E8B-AB66-25603D9E2610}</Project>
       <Name>Application.Main.DTO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Application.MainBoundedContext\Application.Main.csproj">
+    <ProjectReference Include="..\Application.Main\Application.Main.csproj">
       <Project>{75E4283A-61D1-4067-9F51-25EFB55113A6}</Project>
       <Name>Application.Main</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Application.Seedwork\Application.Core.csproj">
+    <ProjectReference Include="..\Application.Core\Application.Core.csproj">
       <Project>{7F17BC81-B7D1-46D8-A94B-FDBAE17F94B7}</Project>
       <Name>Application.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DistributedServices.Seedwork\Services.Core.csproj">
+    <ProjectReference Include="..\Services.Core\Services.Core.csproj">
       <Project>{32241C1D-E0D2-41D0-907A-0631943B360C}</Project>
       <Name>Services.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain.MainBoundedContext\Domain.Main.csproj">
+    <ProjectReference Include="..\Domain.Main\Domain.Main.csproj">
       <Project>{F7F15F85-A171-4EDC-B507-03A8D80915A8}</Project>
       <Name>Domain.Main</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain.Seedwork\Domain.Core.csproj">
+    <ProjectReference Include="..\Domain.Core\Domain.Core.csproj">
       <Project>{04D675A3-B794-44BD-A25C-673BB44739CB}</Project>
       <Name>Domain.Core</Name>
     </ProjectReference>
@@ -234,11 +234,11 @@
       <Project>{106C7F00-C03F-4E29-87AF-ACD1BA292078}</Project>
       <Name>Infrastructure.Crosscutting</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure.Data.MainBoundedContext\Infrastructure.Data.Main.csproj">
+    <ProjectReference Include="..\Infrastructure.Data.Main\Infrastructure.Data.Main.csproj">
       <Project>{35E13CFB-E992-475D-8E53-EA09A539AB43}</Project>
       <Name>Infrastructure.Data.Main</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure.Data.Seedwork\Infrastructure.Data.Core.csproj">
+    <ProjectReference Include="..\Infrastructure.Data.Core\Infrastructure.Data.Core.csproj">
       <Project>{09AAF2C8-47DC-4F12-A3A0-130DCDB1495B}</Project>
       <Name>Infrastructure.Data.Core</Name>
     </ProjectReference>

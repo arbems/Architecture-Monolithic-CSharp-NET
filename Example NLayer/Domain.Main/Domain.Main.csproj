@@ -105,7 +105,7 @@
     <Folder Include="ERPModule\Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Domain.Seedwork\Domain.Core.csproj">
+    <ProjectReference Include="..\Domain.Core\Domain.Core.csproj">
       <Project>{04D675A3-B794-44BD-A25C-673BB44739CB}</Project>
       <Name>Domain.Core</Name>
     </ProjectReference>

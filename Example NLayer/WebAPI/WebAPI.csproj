@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
   </ItemGroup>
 
@@ -13,14 +17,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Application.Core\Application.Core.csproj" />
     <ProjectReference Include="..\Application.Main.DTO\Application.Main.DTO.csproj" />
     <ProjectReference Include="..\Application.Main\Application.Main.csproj" />
-    <ProjectReference Include="..\Domain.Main\Domain.Main.csproj" />
     <ProjectReference Include="..\Domain.Core\Domain.Core.csproj" />
+    <ProjectReference Include="..\Domain.Main\Domain.Main.csproj" />
     <ProjectReference Include="..\Infrastructure.Crosscutting.NetFramework\Infrastructure.Crosscutting.NetFramework.csproj" />
     <ProjectReference Include="..\Infrastructure.Crosscutting\Infrastructure.Crosscutting.csproj" />
-    <ProjectReference Include="..\Infrastructure.Data.Main\Infrastructure.Data.Main.csproj" />
     <ProjectReference Include="..\Infrastructure.Data.Core\Infrastructure.Data.Core.csproj" />
+    <ProjectReference Include="..\Infrastructure.Data.Main\Infrastructure.Data.Main.csproj" />
+    <ProjectReference Include="..\Services.Core\Services.Core.csproj" />
   </ItemGroup>
 
 </Project>

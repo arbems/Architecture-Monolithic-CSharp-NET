@@ -31,5 +31,6 @@
             var adapter = TypeAdapterFactory.CreateAdapter();
             return adapter.Adapt<List<TProjection>>(items);
         }
+
     }
 }

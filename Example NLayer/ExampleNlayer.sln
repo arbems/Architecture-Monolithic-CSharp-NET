@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1-Presentation", "1.1-Pre
 		Presentation.txt = Presentation.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2-Distributed Services", "1.2-Distributed Services", "{B3DBA8EF-79E3-4020-8F6A-538F26756C98}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2-Services", "1.2-Services", "{B3DBA8EF-79E3-4020-8F6A-538F26756C98}"
 	ProjectSection(SolutionItems) = preProject
 		Distributed Services.txt = Distributed Services.txt
 	EndProjectSection
@@ -59,27 +59,29 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Crosscutting
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Crosscutting.NetFramework", "Infrastructure.Crosscutting.NetFramework\Infrastructure.Crosscutting.NetFramework.csproj", "{81CAB7AA-5235-42DB-82E6-2B4A0A1F9987}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Core", "Domain.Seedwork\Domain.Core.csproj", "{04D675A3-B794-44BD-A25C-673BB44739CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Core", "Domain.Core\Domain.Core.csproj", "{04D675A3-B794-44BD-A25C-673BB44739CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data.Core", "Infrastructure.Data.Seedwork\Infrastructure.Data.Core.csproj", "{09AAF2C8-47DC-4F12-A3A0-130DCDB1495B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data.Core", "Infrastructure.Data.Core\Infrastructure.Data.Core.csproj", "{09AAF2C8-47DC-4F12-A3A0-130DCDB1495B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Core", "Application.Seedwork\Application.Core.csproj", "{7F17BC81-B7D1-46D8-A94B-FDBAE17F94B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Core", "Application.Core\Application.Core.csproj", "{7F17BC81-B7D1-46D8-A94B-FDBAE17F94B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data.Main", "Infrastructure.Data.MainBoundedContext\Infrastructure.Data.Main.csproj", "{35E13CFB-E992-475D-8E53-EA09A539AB43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data.Main", "Infrastructure.Data.Main\Infrastructure.Data.Main.csproj", "{35E13CFB-E992-475D-8E53-EA09A539AB43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Main", "Application.MainBoundedContext\Application.Main.csproj", "{75E4283A-61D1-4067-9F51-25EFB55113A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Main", "Application.Main\Application.Main.csproj", "{75E4283A-61D1-4067-9F51-25EFB55113A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Main", "Domain.MainBoundedContext\Domain.Main.csproj", "{F7F15F85-A171-4EDC-B507-03A8D80915A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Main", "Domain.Main\Domain.Main.csproj", "{F7F15F85-A171-4EDC-B507-03A8D80915A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Core", "DistributedServices.Seedwork\Services.Core.csproj", "{32241C1D-E0D2-41D0-907A-0631943B360C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Core", "Services.Core\Services.Core.csproj", "{32241C1D-E0D2-41D0-907A-0631943B360C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Main.DTO", "Application.MainBoundedContext.DTO\Application.Main.DTO.csproj", "{62FB7287-FE06-4E8B-AB66-25603D9E2610}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Main.DTO", "Application.Main.DTO\Application.Main.DTO.csproj", "{62FB7287-FE06-4E8B-AB66-25603D9E2610}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{F224A76A-5C5A-4027-8D81-94A9C728269C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppMVC", "WebAppMVC\WebAppMVC.csproj", "{36243124-F0AB-44E0-8CD4-9C7CAA9C0F73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedServices.Main", "DistributedServices.MainBoundedContext\DistributedServices.Main.csproj", "{7199A95A-D458-447A-84D4-A5B161ADFE57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Main", "Services.Main\Services.Main.csproj", "{7199A95A-D458-447A-84D4-A5B161ADFE57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{2E1FA026-9240-4CA2-A831-418DCC6FB4F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{7199A95A-D458-447A-84D4-A5B161ADFE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7199A95A-D458-447A-84D4-A5B161ADFE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7199A95A-D458-447A-84D4-A5B161ADFE57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E1FA026-9240-4CA2-A831-418DCC6FB4F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1FA026-9240-4CA2-A831-418DCC6FB4F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1FA026-9240-4CA2-A831-418DCC6FB4F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1FA026-9240-4CA2-A831-418DCC6FB4F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -169,6 +175,7 @@ Global
 		{F224A76A-5C5A-4027-8D81-94A9C728269C} = {B97F79DB-D83B-4A27-ADF3-A55EDA299132}
 		{36243124-F0AB-44E0-8CD4-9C7CAA9C0F73} = {F224A76A-5C5A-4027-8D81-94A9C728269C}
 		{7199A95A-D458-447A-84D4-A5B161ADFE57} = {896389E4-2781-4CEA-AE2F-95990834E610}
+		{2E1FA026-9240-4CA2-A831-418DCC6FB4F2} = {896389E4-2781-4CEA-AE2F-95990834E610}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B2F130F0-0FC0-4860-A5C8-41A712104196}

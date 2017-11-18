@@ -1,6 +1,7 @@
 ﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Adapter
 {
     using AutoMapper;
+    using AutoMapper.QueryableExtensions;
     using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Adapter;
 
     /// <summary>

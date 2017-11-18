@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{62FB7287-FE06-4E8B-AB66-25603D9E2610}</ProjectGuid>
+    <ProjectGuid>{75E4283A-61D1-4067-9F51-25EFB55113A6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Nlayer.Samples.NLayerApp.Application.Main.DTO</RootNamespace>
-    <AssemblyName>NLayerApp.Application.Main.DTO</AssemblyName>
+    <RootNamespace>Nlayer.Samples.NLayerApp.Application.Main</RootNamespace>
+    <AssemblyName>NLayerApp.Application.Main</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
@@ -32,6 +32,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -44,13 +46,14 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper, Version=6.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.6.2.0\lib\net45\AutoMapper.dll</HintPath>
+    <Reference Include="AutoMapper, Version=6.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.2.1\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,30 +61,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BankAccountDTO.cs" />
-    <Compile Include="BankActivityDTO.cs" />
-    <Compile Include="BookDTO.cs" />
-    <Compile Include="CountryDTO.cs" />
-    <Compile Include="CustomerDTO.cs" />
-    <Compile Include="CustomerListDTO.cs" />
-    <Compile Include="OrderDTO.cs" />
-    <Compile Include="OrderLineDTO.cs" />
-    <Compile Include="OrderListDTO.cs" />
-    <Compile Include="ProductDTO.cs" />
-    <Compile Include="Profiles\BankingProfile.cs" />
-    <Compile Include="Profiles\ErpProfile.cs" />
+    <Compile Include="BankingModule\Services\IBankAppService.cs" />
+    <Compile Include="BankingModule\Services\BankAppService.cs" />
+    <Compile Include="ERPModule\Services\CustomerAppService.cs" />
+    <Compile Include="ERPModule\Services\ICustomerAppService.cs" />
+    <Compile Include="ERPModule\Services\SalesAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SoftwareDTO.cs" />
+    <Compile Include="Resources\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ERPModule\Services\ISalesAppService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Domain.MainBoundedContext\Domain.Main.csproj">
+    <ProjectReference Include="..\Application.Main.DTO\Application.Main.DTO.csproj">
+      <Project>{62FB7287-FE06-4E8B-AB66-25603D9E2610}</Project>
+      <Name>Application.Main.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Application.Core\Application.Core.csproj">
+      <Project>{7F17BC81-B7D1-46D8-A94B-FDBAE17F94B7}</Project>
+      <Name>Application.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.Main\Domain.Main.csproj">
       <Project>{F7F15F85-A171-4EDC-B507-03A8D80915A8}</Project>
       <Name>Domain.Main</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain.Seedwork\Domain.Core.csproj">
+    <ProjectReference Include="..\Domain.Core\Domain.Core.csproj">
       <Project>{04D675A3-B794-44BD-A25C-673BB44739CB}</Project>
       <Name>Domain.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.Crosscutting\Infrastructure.Crosscutting.csproj">
+      <Project>{106C7F00-C03F-4E29-87AF-ACD1BA292078}</Project>
+      <Name>Infrastructure.Crosscutting</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DesignNotes.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

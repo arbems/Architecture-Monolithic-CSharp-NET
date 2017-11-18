@@ -247,19 +247,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Application.MainBoundedContext.DTO\Application.Main.DTO.csproj">
+    <ProjectReference Include="..\Application.Main.DTO\Application.Main.DTO.csproj">
       <Project>{62fb7287-fe06-4e8b-ab66-25603d9e2610}</Project>
       <Name>Application.Main.DTO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Application.MainBoundedContext\Application.Main.csproj">
+    <ProjectReference Include="..\Application.Main\Application.Main.csproj">
       <Project>{75e4283a-61d1-4067-9f51-25efb55113a6}</Project>
       <Name>Application.Main</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain.MainBoundedContext\Domain.Main.csproj">
+    <ProjectReference Include="..\Domain.Main\Domain.Main.csproj">
       <Project>{f7f15f85-a171-4edc-b507-03a8d80915a8}</Project>
       <Name>Domain.Main</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain.Seedwork\Domain.Core.csproj">
+    <ProjectReference Include="..\Domain.Core\Domain.Core.csproj">
       <Project>{04d675a3-b794-44bd-a25c-673bb44739cb}</Project>
       <Name>Domain.Core</Name>
     </ProjectReference>
@@ -271,11 +271,11 @@
       <Project>{106c7f00-c03f-4e29-87af-acd1ba292078}</Project>
       <Name>Infrastructure.Crosscutting</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure.Data.MainBoundedContext\Infrastructure.Data.Main.csproj">
+    <ProjectReference Include="..\Infrastructure.Data.Main\Infrastructure.Data.Main.csproj">
       <Project>{35e13cfb-e992-475d-8e53-ea09a539ab43}</Project>
       <Name>Infrastructure.Data.Main</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure.Data.Seedwork\Infrastructure.Data.Core.csproj">
+    <ProjectReference Include="..\Infrastructure.Data.Core\Infrastructure.Data.Core.csproj">
       <Project>{09aaf2c8-47dc-4f12-a3a0-130dcdb1495b}</Project>
       <Name>Infrastructure.Data.Core</Name>
     </ProjectReference>

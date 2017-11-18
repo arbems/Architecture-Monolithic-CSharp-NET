@@ -29,5 +29,6 @@
         /// <returns><paramref name="source"/> mapped to <typeparamref name="TTarget"/></returns>
         TTarget Adapt<TTarget>(object source)
             where TTarget : class,new();
+
     }
 }
