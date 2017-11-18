@@ -17,11 +17,11 @@ namespace Microsoft.Samples.NLayerApp.DistributedServices.MainBoundedContext
     using System.Collections.Generic;
     using System.ServiceModel;
 
-    using Microsoft.Samples.NLayerApp.Application.MainBoundedContext.BankingModule.Services;
+    using Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services;
+    using Nlayer.Samples.NLayerApp.DistributedServices.Core.ErrorHandlers;
+    using Nlayer.Samples.NLayerApp.Application.Main.DTO;
     using Microsoft.Samples.NLayerApp.DistributedServices.MainBoundedContext.InstanceProviders;
-    using Microsoft.Samples.NLayerApp.DistributedServices.Seedwork.ErrorHandlers;
-    using Microsoft.Samples.NLayerApp.Application.MainBoundedContext.DTO;
-    
+    using Nlayer.Samples.NLayerApp.DistributedServices.Main;
 
     [ApplicationErrorHandlerAttribute()] // manage all unhandled exceptions
     [UnityInstanceProviderServiceBehavior()] //create instance and inject dependencies using unity container

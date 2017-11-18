@@ -59,17 +59,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CommonServiceLocator, Version=2.0.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\CommonServiceLocator.2.0.1\lib\net40\CommonServiceLocator.dll</HintPath>
+      <HintPath>..\packages\Unity.5.2.1\lib\net45\CommonServiceLocator.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.EntityFrameworkCore, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.EntityFrameworkCore.2.0.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.2.0.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.EntityFrameworkCore.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Design.2.0.0\lib\net461\Microsoft.EntityFrameworkCore.Design.dll</HintPath>
+    <Reference Include="Microsoft.EntityFrameworkCore.Design, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Design.2.0.1\lib\net461\Microsoft.EntityFrameworkCore.Design.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Relational.2.0.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Relational.2.0.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
@@ -110,7 +110,7 @@
       <HintPath>..\packages\Unity.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="Remotion.Linq, Version=2.1.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Remotion.Linq.2.1.1\lib\net45\Remotion.Linq.dll</HintPath>
+      <HintPath>..\packages\Remotion.Linq.2.1.2\lib\net45\Remotion.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.Immutable, Version=1.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Collections.Immutable.1.4.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
@@ -146,11 +146,26 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="Unity.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.0.0\lib\net40\Unity.Abstractions.dll</HintPath>
+    <Reference Include="Unity.Abstractions, Version=2.2.1.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.1\lib\net45\Unity.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Container, Version=5.0.0.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.5.0.0\lib\net40\Unity.Container.dll</HintPath>
+    <Reference Include="Unity.Configuration, Version=5.0.6.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.1\lib\net45\Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.2.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.1\lib\net45\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception, Version=5.0.6.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.1\lib\net45\Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception.Configuration, Version=5.0.6.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.1\lib\net45\Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RegistrationByConvention, Version=2.1.0.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.1\lib\net45\Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ServiceLocation, Version=2.0.6.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.2.1\lib\net45\Unity.ServiceLocation.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -187,29 +202,29 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Application.MainBoundedContext.DTO\Application.MainBoundedContext.DTO.csproj">
+    <ProjectReference Include="..\Application.MainBoundedContext.DTO\Application.Main.DTO.csproj">
       <Project>{62FB7287-FE06-4E8B-AB66-25603D9E2610}</Project>
-      <Name>Application.MainBoundedContext.DTO</Name>
+      <Name>Application.Main.DTO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Application.MainBoundedContext\Application.MainBoundedContext.csproj">
+    <ProjectReference Include="..\Application.MainBoundedContext\Application.Main.csproj">
       <Project>{75E4283A-61D1-4067-9F51-25EFB55113A6}</Project>
-      <Name>Application.MainBoundedContext</Name>
+      <Name>Application.Main</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Application.Seedwork\Application.Seedwork.csproj">
+    <ProjectReference Include="..\Application.Seedwork\Application.Core.csproj">
       <Project>{7F17BC81-B7D1-46D8-A94B-FDBAE17F94B7}</Project>
-      <Name>Application.Seedwork</Name>
+      <Name>Application.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DistributedServices.Seedwork\DistributedServices.Seedwork.csproj">
+    <ProjectReference Include="..\DistributedServices.Seedwork\Services.Core.csproj">
       <Project>{32241C1D-E0D2-41D0-907A-0631943B360C}</Project>
-      <Name>DistributedServices.Seedwork</Name>
+      <Name>Services.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain.MainBoundedContext\Domain.MainBoundedContext.csproj">
+    <ProjectReference Include="..\Domain.MainBoundedContext\Domain.Main.csproj">
       <Project>{F7F15F85-A171-4EDC-B507-03A8D80915A8}</Project>
-      <Name>Domain.MainBoundedContext</Name>
+      <Name>Domain.Main</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain.Seedwork\Domain.Seedwork.csproj">
+    <ProjectReference Include="..\Domain.Seedwork\Domain.Core.csproj">
       <Project>{04D675A3-B794-44BD-A25C-673BB44739CB}</Project>
-      <Name>Domain.Seedwork</Name>
+      <Name>Domain.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Infrastructure.Crosscutting.NetFramework\Infrastructure.Crosscutting.NetFramework.csproj">
       <Project>{81CAB7AA-5235-42DB-82E6-2B4A0A1F9987}</Project>
@@ -219,13 +234,13 @@
       <Project>{106C7F00-C03F-4E29-87AF-ACD1BA292078}</Project>
       <Name>Infrastructure.Crosscutting</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure.Data.MainBoundedContext\Infrastructure.Data.MainBoundedContext.csproj">
+    <ProjectReference Include="..\Infrastructure.Data.MainBoundedContext\Infrastructure.Data.Main.csproj">
       <Project>{35E13CFB-E992-475D-8E53-EA09A539AB43}</Project>
-      <Name>Infrastructure.Data.MainBoundedContext</Name>
+      <Name>Infrastructure.Data.Main</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure.Data.Seedwork\Infrastructure.Data.Seedwork.csproj">
+    <ProjectReference Include="..\Infrastructure.Data.Seedwork\Infrastructure.Data.Core.csproj">
       <Project>{09AAF2C8-47DC-4F12-A3A0-130DCDB1495B}</Project>
-      <Name>Infrastructure.Data.Seedwork</Name>
+      <Name>Infrastructure.Data.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

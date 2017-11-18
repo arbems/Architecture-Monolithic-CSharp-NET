@@ -1,25 +1,12 @@
-﻿//===================================================================================
-// Microsoft Developer & Platform Evangelism
-//=================================================================================== 
-// THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, 
-// EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES 
-// OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
-//===================================================================================
-// Copyright (c) Microsoft Corporation.  All Rights Reserved.
-// This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
-//===================================================================================
-			
-namespace Microsoft.Samples.NLayerApp.DistributedServices.MainBoundedContext
+﻿namespace Nlayer.Samples.NLayerApp.DistributedServices.Main
 {
     using System;
     using System.Collections.Generic;
-    using System.ServiceModel;
-    using Microsoft.Samples.NLayerApp.Application.MainBoundedContext.DTO;
-    using Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services;
     using Microsoft.Samples.NLayerApp.DistributedServices.MainBoundedContext.InstanceProviders;
-    using Microsoft.Samples.NLayerApp.DistributedServices.Seedwork.ErrorHandlers;
-    
+    using Nlayer.Samples.NLayerApp.DistributedServices.Core.ErrorHandlers;
+    using Nlayer.Samples.NLayerApp.Application.Main.ERPModule.Services;
+    using Nlayer.Samples.NLayerApp.Application.Main.DTO;
+
     [ApplicationErrorHandlerAttribute()] // manage all unhandled exceptions
     [UnityInstanceProviderServiceBehavior()] //create instance and inject dependencies using unity container
     public class ERPModuleService : IERPModuleService

@@ -13,29 +13,23 @@
 namespace Microsoft.Samples.NLayerApp.DistributedServices.MainBoundedContext.InstanceProviders
 {
     using Microsoft.Practices.Unity;
-    using Microsoft.Samples.NLayerApp.Application.MainBoundedContext.BankingModule.Services;
-    using Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule.Services;
-
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.BankingModule.Aggregates.BankAccountAgg;
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.BankingModule.Services;
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CountryAgg;
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.CustomerAgg;
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.OrderAgg;
-    using Microsoft.Samples.NLayerApp.Domain.MainBoundedContext.ERPModule.Aggregates.ProductAgg;
-
-    using Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Adapter;
-    using Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Logging;
-    using Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Logging;
-    using Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Validator;
-    using Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.Validator;
-
-    using Microsoft.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.BankingModule.Repositories;
-    using Microsoft.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.ERPModule.Repositories;
-    using Microsoft.Samples.NLayerApp.Infrastructure.Data.MainBoundedContext.UnitOfWork;
-    using Microsoft.Samples.NLayerApp.Application.MainBoundedContext.BankingModule;
-    using Microsoft.Samples.NLayerApp.Application.MainBoundedContext.ERPModule;
-    using Microsoft.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Adapter;
-    
+    using Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services;
+    using Nlayer.Samples.NLayerApp.Application.Main.ERPModule.Services;
+    using Nlayer.Samples.NLayerApp.DistributedServices.Main;
+    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg;
+    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Services;
+    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg;
+    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
+    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.OrderAgg;
+    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.ProductAgg;
+    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Adapter;
+    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging;
+    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Adapter;
+    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Logging;
+    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Validator;
+    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Validator;
+    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.BankingModule.Repositories;
+    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.ERPModule.Repositories;
 
     /// <summary>
     /// DI container accessor
