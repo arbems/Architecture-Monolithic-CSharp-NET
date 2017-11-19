@@ -49,6 +49,7 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,6 +60,12 @@
     <Compile Include="Adapter\ITypeAdapter.cs" />
     <Compile Include="Adapter\ITypeAdapterFactory.cs" />
     <Compile Include="Adapter\TypeAdapterFactory.cs" />
+    <Compile Include="Caching\Extensions.cs" />
+    <Compile Include="Caching\ICacheManager.cs" />
+    <Compile Include="Email\IMail.cs" />
+    <Compile Include="Email\IMailFactory.cs" />
+    <Compile Include="Email\MailFactory.cs" />
+    <Compile Include="Image\IImage.cs" />
     <Compile Include="Logging\ILoggerFactory.cs" />
     <Compile Include="Logging\LoggerFactory.cs" />
     <Compile Include="Properties\GlobalSuppressions.cs" />
@@ -74,6 +81,7 @@
     <Compile Include="Validator\IEntityValidatorFactory.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Email\Resources\Messages.resx" />
     <EmbeddedResource Include="Resources\Messages.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Messages.Designer.cs</LastGenOutput>

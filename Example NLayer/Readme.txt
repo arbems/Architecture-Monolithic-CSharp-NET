@@ -16,3 +16,11 @@
 
 
 * To create ASP MVC application, ASP MVC Core & Angular 4
+
+Pending:
+* Implement Automapper and Automapper Queryable extension
+* Implement Caching
+* Implement Web API
+* Implement Send Email
+* Implement Images
+* Review Versions projects (.Net Framework 6 or .Net Core)

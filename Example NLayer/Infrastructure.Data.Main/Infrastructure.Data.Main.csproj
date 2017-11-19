@@ -114,6 +114,10 @@
       <Project>{04D675A3-B794-44BD-A25C-673BB44739CB}</Project>
       <Name>Domain.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.Crosscutting\Infrastructure.Crosscutting.csproj">
+      <Project>{106c7f00-c03f-4e29-87af-acd1ba292078}</Project>
+      <Name>Infrastructure.Crosscutting</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Infrastructure.Data.Core\Infrastructure.Data.Core.csproj">
       <Project>{09AAF2C8-47DC-4F12-A3A0-130DCDB1495B}</Project>
       <Name>Infrastructure.Data.Core</Name>

@@ -42,10 +42,7 @@ namespace Microsoft.Samples.NLayerApp.DistributedServices.MainBoundedContext
         /// <param name="bankAppService">The bank application service dependency</param>
         public BankingModuleService(IBankAppService bankAppService)
         {
-            if (bankAppService == null)
-                throw new ArgumentNullException("bankAppService");
-
-            _bankAppService = bankAppService;
+            _bankAppService = bankAppService ?? throw new ArgumentNullException("bankAppService");
         }
         #endregion
 
