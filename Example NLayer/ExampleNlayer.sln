@@ -35,7 +35,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5-Infrastructure", "1.5-I
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5.1-Data", "1.5.1-Data", "{BB095221-6A30-4842-93E8-B7786BEA083F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5.3-CrossCutting", "1.5.3-CrossCutting", "{52711E8B-1E70-4085-8995-CF471DCD9AFE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5.2-CrossCutting", "1.5.2-CrossCutting", "{52711E8B-1E70-4085-8995-CF471DCD9AFE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.4.1-Domain.Core", "1.4.1-Domain.Core", "{CFE7A2C4-0110-413F-B2BB-3D38260FF9E3}"
 EndProject
@@ -79,7 +79,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppMVC", "WebAppMVC\WebA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Main", "Services.Main\Services.Main.csproj", "{7199A95A-D458-447A-84D4-A5B161ADFE57}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5.3.1-CrossCutting.Core", "1.5.3.1-CrossCutting.Core", "{0CB2D8DF-8BDE-42CD-B5EB-BA4971294D8D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5.2.1-CrossCutting.Core", "1.5.2.1-CrossCutting.Core", "{0CB2D8DF-8BDE-42CD-B5EB-BA4971294D8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -99,9 +99,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DesignNotes.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="ERPModule\Services\" />
   </ItemGroup>
   <ItemGroup>

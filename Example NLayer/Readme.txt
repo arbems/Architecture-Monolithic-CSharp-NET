@@ -13,6 +13,7 @@
 * Adapter (AutoMapper)
 * SQL Express
 * Caching
+* Test
 
 
 * To create ASP MVC application, ASP MVC Core & Angular 4

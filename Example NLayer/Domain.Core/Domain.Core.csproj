@@ -73,10 +73,6 @@
     <Compile Include="Specification\TrueSpecification.cs" />
     <Compile Include="ValueObject.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="DesignNotes.txt" />
-    <Content Include="Specification\SpecificationsDesignNotes.txt" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
