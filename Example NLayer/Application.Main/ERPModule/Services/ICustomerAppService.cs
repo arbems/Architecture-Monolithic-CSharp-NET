@@ -68,5 +68,11 @@
         /// <param name="text">The text to search in countries</param>
         /// <returns>A collection of country dto</returns>
         List<CountryDTO> FindCountries(string text);
+
+        /// <summary>
+        /// Get All countries <paramref name="text"/>
+        /// </summary>
+        /// <returns>A collection of country dto</returns>
+        List<CountryDTO> GetAll();
     }
 }

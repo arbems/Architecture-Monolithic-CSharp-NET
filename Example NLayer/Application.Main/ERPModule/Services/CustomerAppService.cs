@@ -246,6 +246,23 @@
             else // no data
                 return null;
         }
+        /// <summary>
+        ///  <see cref="M:Application.Main.ERPModule.Services.ICustomerManagement.GetAll"/>
+        /// </summary>// <returns> <see cref="M:Application.Main.ERPModule.Services.ICustomerManagement.GetAll"/></returns>
+        public List<CountryDTO> GetAll()
+        {
+            var countries = _countryRepository.GetAll();
+
+            if (countries != null
+                &&
+                countries.Any())
+            {
+                return countries.ProjectedAsCollection<CountryDTO>();
+            }
+            else // no data.
+                return null;
+
+        }
 
         #endregion
 

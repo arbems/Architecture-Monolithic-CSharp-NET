@@ -33,7 +33,7 @@
 
             var set = currentUnitOfWork.CreateSet<Country>();
 
-            string key = "Country";
+            string key = "Countries";
             var categories = cacheManager.Get(key, () =>
             {
                 return set;

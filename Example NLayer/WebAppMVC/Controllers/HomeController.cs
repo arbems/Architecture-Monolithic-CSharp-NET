@@ -18,20 +18,9 @@ namespace WebAppMVC.Controllers
 
         public ActionResult Index()
         {
+            //Example
             var items = customerAppService.FindCountries(0, 100);
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+            var countries = customerAppService.GetAll();
 
             return View();
         }

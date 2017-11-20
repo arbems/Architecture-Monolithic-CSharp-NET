@@ -2,7 +2,9 @@ using Application.Main.ERPModule.Services;
 using Domain.Main.ERPModule.Aggregates.CountryAgg;
 using Domain.Main.ERPModule.Aggregates.CustomerAgg;
 using Infrastructure.Crosscutting.Adapter;
+using Infrastructure.Crosscutting.Caching;
 using Infrastructure.Crosscutting.NetFramework.Adapter;
+using Infrastructure.Crosscutting.NetFramework.Caching;
 using Infrastructure.Data.Main.ERPModule.Repositories;
 using System;
 using System.Web;
@@ -52,6 +54,7 @@ namespace WebAppMVC
             container.RegisterType<ICustomerAppService, CustomerAppService>();
             container.RegisterType<ICountryRepository, CountryRepository>();
             container.RegisterType<ICustomerRepository, CustomerRepository>();
+            container.RegisterType<ICacheManager, MemoryCacheManager>();
             container.RegisterType<HttpContextBase>(new InjectionFactory(c =>
             {
                 return new HttpContextWrapper(HttpContext.Current);
