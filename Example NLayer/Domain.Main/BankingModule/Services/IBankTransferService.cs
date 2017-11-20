@@ -1,7 +1,7 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Services
+﻿namespace Domain.Main.BankingModule.Services
 {
     using System;
-    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg;
+    using Domain.Main.BankingModule.Aggregates.BankAccountAgg;
 
 
     /// <summary>

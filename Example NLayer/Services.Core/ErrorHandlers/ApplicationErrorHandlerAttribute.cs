@@ -6,7 +6,7 @@ using System.ServiceModel.Channels;
 using System.ServiceModel.Description;
 using System.ServiceModel.Dispatcher;
 
-namespace Nlayer.Samples.NLayerApp.DistributedServices.Core.ErrorHandlers
+namespace DistributedServices.Core.ErrorHandlers
 {
 
    /// <summary>

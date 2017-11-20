@@ -1,7 +1,7 @@
-﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Core
+﻿namespace Infrastructure.Data.Core
 {
     using System.Data.Entity;
-    using Nlayer.Samples.NLayerApp.Domain.Core;
+    using Domain.Core;
 
     /// <summary>
     /// The UnitOfWork contract for EF implementation

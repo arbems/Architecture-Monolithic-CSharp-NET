@@ -8,8 +8,8 @@
     <ProjectGuid>{35E13CFB-E992-475D-8E53-EA09A539AB43}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Nlayer.Samples.NLayerApp.Infrastructure.Data.Main</RootNamespace>
-    <AssemblyName>NLayerApp.Infrastructure.Data.Main</AssemblyName>
+    <RootNamespace>Infrastructure.Data.Main</RootNamespace>
+    <AssemblyName>Infrastructure.Data.Main</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>

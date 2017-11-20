@@ -1,11 +1,11 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg
+﻿namespace Domain.Main.ERPModule.Aggregates.CountryAgg
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
-    using Nlayer.Samples.NLayerApp.Domain.Core;
-    using Nlayer.Samples.NLayerApp.Domain.Main.Resources;
+    using Domain.Core;
+    using Domain.Main.Resources;
 
     /// <summary>
     /// The country entity

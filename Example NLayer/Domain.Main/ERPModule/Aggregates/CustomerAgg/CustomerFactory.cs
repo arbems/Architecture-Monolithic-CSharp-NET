@@ -1,9 +1,9 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg
+﻿namespace Domain.Main.ERPModule.Aggregates.CustomerAgg
 {
     using System;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.Resources;
+    using Domain.Main.ERPModule.Aggregates.CountryAgg;
+    using Domain.Main.ERPModule.Aggregates.CustomerAgg;
+    using Domain.Main.Resources;
 
     /// <summary>
     /// This is the factory for Customer creation, which means that the main purpose

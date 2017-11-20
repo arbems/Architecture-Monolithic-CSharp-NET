@@ -1,12 +1,12 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.ProductAgg
+﻿namespace Domain.Main.ERPModule.Aggregates.ProductAgg
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Nlayer.Samples.NLayerApp.Domain.Core;
+    using Domain.Core;
     using System.ComponentModel.DataAnnotations;
-    using Nlayer.Samples.NLayerApp.Domain.Main.Resources;
+    using Domain.Main.Resources;
 
     /// <summary>
     /// Product aggregate root-entity

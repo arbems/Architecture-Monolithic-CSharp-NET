@@ -1,11 +1,11 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Core
+﻿namespace Domain.Core
 {
     using System;
     using System.Collections.Generic;
     using System.Linq.Expressions;
 
-    using Nlayer.Samples.NLayerApp.Domain.Core;
-    using Nlayer.Samples.NLayerApp.Domain.Core.Specification;
+    using Domain.Core;
+    using Domain.Core.Specification;
 
     /// <summary>
     /// Base interface for implement a "Repository Pattern", for

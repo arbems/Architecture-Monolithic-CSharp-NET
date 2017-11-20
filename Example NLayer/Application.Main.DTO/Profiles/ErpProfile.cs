@@ -1,10 +1,10 @@
-﻿namespace Nlayer.Samples.NLayerApp.Application.Main.DTO.Profiles
+﻿namespace Application.Main.DTO.Profiles
 {
     using AutoMapper;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.OrderAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.ProductAgg;
+    using Domain.Main.ERPModule.Aggregates.CountryAgg;
+    using Domain.Main.ERPModule.Aggregates.CustomerAgg;
+    using Domain.Main.ERPModule.Aggregates.OrderAgg;
+    using Domain.Main.ERPModule.Aggregates.ProductAgg;
 
     class ErpProfile
         :Profile

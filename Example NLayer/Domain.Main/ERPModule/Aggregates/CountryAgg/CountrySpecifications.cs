@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Nlayer.Samples.NLayerApp.Domain.Core.Specification;
+using Domain.Core.Specification;
 
-namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg
+namespace Domain.Main.ERPModule.Aggregates.CountryAgg
 {
     /// <summary>
     /// A list of country specifications. 

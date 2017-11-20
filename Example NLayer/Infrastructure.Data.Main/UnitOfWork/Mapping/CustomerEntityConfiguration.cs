@@ -1,10 +1,10 @@
-﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.UnitOfWork.Mapping
+﻿namespace Infrastructure.Data.Main.UnitOfWork.Mapping
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
+    using Domain.Main.ERPModule.Aggregates.CustomerAgg;
     using System.Data.Entity.ModelConfiguration;
 
     /// <summary>

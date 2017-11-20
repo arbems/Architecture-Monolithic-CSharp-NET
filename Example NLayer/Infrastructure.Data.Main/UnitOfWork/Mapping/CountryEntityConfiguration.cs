@@ -1,8 +1,8 @@
-﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.UnitOfWork.Mapping
+﻿namespace Infrastructure.Data.Main.UnitOfWork.Mapping
 {
     using System.Data.Entity.ModelConfiguration;
 
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg;
+    using Domain.Main.ERPModule.Aggregates.CountryAgg;
 
     /// <summary>
     /// The country entity type configuration

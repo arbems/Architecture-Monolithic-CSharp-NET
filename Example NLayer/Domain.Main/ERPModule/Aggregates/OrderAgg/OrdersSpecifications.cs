@@ -1,10 +1,10 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.OrderAgg
+﻿namespace Domain.Main.ERPModule.Aggregates.OrderAgg
 {
     using System;
-    using Nlayer.Samples.NLayerApp.Domain.Core.Specification;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
+    using Domain.Core.Specification;
+    using Domain.Main.ERPModule.Aggregates.CustomerAgg;
     using System.Text.RegularExpressions;
-    using Nlayer.Samples.NLayerApp.Domain.Main.Resources;
+    using Domain.Main.Resources;
 
     /// <summary>
     /// The Orders specifications

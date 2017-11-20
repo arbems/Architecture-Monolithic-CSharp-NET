@@ -1,13 +1,13 @@
-﻿using Infrastructure.Crosscutting.Image;
+﻿using Infrastructure.Crosscutting.Media;
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace Infrastructure.Crosscutting.NetFramework.Imaging
+namespace Infrastructure.Crosscutting.NetFramework.Media
 {
-    public class Image : IImage
+    public class Picture : IPicture
     {
         public string CreateFilename(string fileName)
         {
@@ -21,7 +21,7 @@ namespace Infrastructure.Crosscutting.NetFramework.Imaging
             Bitmap original = Bitmap.FromStream(stream) as Bitmap;
             var StreamLength = stream.Length;
 
-            // imagenes giradas
+            // rotated images
             foreach (var prop in original.PropertyItems)
             {
                 if ((prop.Id == 0x0112 || prop.Id == 5029 || prop.Id == 274))

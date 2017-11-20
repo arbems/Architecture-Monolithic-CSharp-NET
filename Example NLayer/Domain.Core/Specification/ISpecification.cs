@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Core.Specification
+﻿namespace Domain.Core.Specification
 {
     using System;
     using System.Linq.Expressions;

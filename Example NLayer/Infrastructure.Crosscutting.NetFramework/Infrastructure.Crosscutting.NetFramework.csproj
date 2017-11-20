@@ -8,8 +8,8 @@
     <ProjectGuid>{81CAB7AA-5235-42DB-82E6-2B4A0A1F9987}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework</RootNamespace>
-    <AssemblyName>NLayerApp.Infrastructure.Crosscutting.NetFramework</AssemblyName>
+    <RootNamespace>Infrastructure.Crosscutting.NetFramework</RootNamespace>
+    <AssemblyName>Infrastructure.Crosscutting.NetFramework</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
@@ -82,7 +82,7 @@
     <Compile Include="Caching\PerRequestCacheManager.cs" />
     <Compile Include="Email\SourceMail.cs" />
     <Compile Include="Email\SourceMailFactory.cs" />
-    <Compile Include="Image\Image.cs" />
+    <Compile Include="Media\Picture.cs" />
     <Compile Include="Properties\GlobalSuppressions.cs" />
     <Compile Include="Logging\TraceSourceLog.cs" />
     <Compile Include="Logging\TraceSourceLogFactory.cs" />

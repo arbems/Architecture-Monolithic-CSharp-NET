@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Nlayer.Samples.NLayerApp.Domain.Core;
+using Domain.Core;
 
-namespace Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg
+namespace Domain.Main.BankingModule.Aggregates.BankAccountAgg
 {
     /// <summary>
     /// The bank account number value object

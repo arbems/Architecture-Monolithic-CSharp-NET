@@ -1,9 +1,9 @@
-﻿namespace Nlayer.Samples.NLayerApp.Application.Core
+﻿namespace Application.Core
 {
     using System;
     using System.Collections.Generic;
 
-    using Nlayer.Samples.NLayerApp.Application.Core.Resources;
+    using Application.Core.Resources;
 
     /// <summary>
     /// The custom exception for validation errors

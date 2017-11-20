@@ -1,8 +1,8 @@
-﻿namespace Nlayer.Samples.ExampleNlayer.Application.MainBoundedContext.DTO.Profiles
+﻿namespace Application.Main.DTO.Profiles
 {
     using AutoMapper;
-    using Nlayer.Samples.NLayerApp.Application.Main.DTO;
-    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg;
+    using Application.Main.DTO;
+    using Domain.Main.BankingModule.Aggregates.BankAccountAgg;
 
     class BankingProfile
         : Profile

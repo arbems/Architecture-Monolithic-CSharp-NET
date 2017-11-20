@@ -1,10 +1,10 @@
-﻿namespace Nlayer.Samples.NLayerApp.DistributedServices.Main
+﻿namespace DistributedServices.Main
 {
     using System;
     using System.Collections.Generic;
     using System.ServiceModel;
-    using Nlayer.Samples.NLayerApp.DistributedServices.Core.ErrorHandlers;
-    using Nlayer.Samples.NLayerApp.Application.Main.DTO;
+    using DistributedServices.Core.ErrorHandlers;
+    using Application.Main.DTO;
 
     /// <summary>
     /// WCF SERVICE FACADE FOR ERP MODULE

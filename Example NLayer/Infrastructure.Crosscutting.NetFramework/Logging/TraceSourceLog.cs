@@ -1,14 +1,14 @@
-﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Logging
+﻿namespace Infrastructure.Crosscutting.NetFramework.Logging
 {
     using System;
     using System.Diagnostics;
     using System.Globalization;
     using System.Security;
 
-    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging;
+    using Infrastructure.Crosscutting.Logging;
     
     /// <summary>
-    /// Implementation of contract <see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+    /// Implementation of contract <see cref="Infrastructure.Crosscutting.Logging.ILogger"/>
     /// using System.Diagnostics API.
     /// </summary>
     public sealed class TraceSourceLog
@@ -61,10 +61,10 @@
         #region ILogger Members
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="args"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="args"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void LogInfo(string message, params object[] args)
         {
             if (!String.IsNullOrWhiteSpace(message))
@@ -75,10 +75,10 @@
             }
         }
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="args"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="args"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void LogWarning(string message, params object[] args)
         {
 
@@ -91,10 +91,10 @@
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="args"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="args"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void LogError(string message, params object[] args)
         {
             if (!String.IsNullOrWhiteSpace(message))
@@ -106,11 +106,11 @@
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="exception"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="args"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="exception"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="args"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void LogError(string message, Exception exception, params object[] args)
         {
             if (!String.IsNullOrWhiteSpace(message)
@@ -126,10 +126,10 @@
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="args"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="args"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void Debug(string message, params object[] args)
         {
             if (!String.IsNullOrWhiteSpace(message))
@@ -141,11 +141,11 @@
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="exception"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="args"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="exception"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="args"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void Debug(string message, Exception exception,params object[] args)
         {
             if (!String.IsNullOrWhiteSpace(message)
@@ -161,9 +161,9 @@
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="item"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="item"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void Debug(object item)
         {
             if (item != null)
@@ -173,10 +173,10 @@
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="args"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="args"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void Fatal(string message, params object[] args)
         {
             if (!String.IsNullOrWhiteSpace(message))
@@ -188,10 +188,10 @@
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/>
+        /// <see cref="Infrastructure.Crosscutting.Logging.ILogger"/>
         /// </summary>
-        /// <param name="message"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
-        /// <param name="exception"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="message"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
+        /// <param name="exception"><see cref="Infrastructure.Crosscutting.Logging.ILogger"/></param>
         public void Fatal(string message, Exception exception,params object[] args)
         {
             if (!String.IsNullOrWhiteSpace(message)

@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.UnitOfWork
+﻿namespace Infrastructure.Data.Main.UnitOfWork
 {
     using System.Collections.Generic;
     using System.Linq;
@@ -8,13 +8,13 @@
     using System.Data.Entity.ModelConfiguration.Conventions;
 
     
-    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.OrderAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.ProductAgg;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.UnitOfWork.Mapping;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Core;
+    using Domain.Main.BankingModule.Aggregates.BankAccountAgg;
+    using Domain.Main.ERPModule.Aggregates.CountryAgg;
+    using Domain.Main.ERPModule.Aggregates.CustomerAgg;
+    using Domain.Main.ERPModule.Aggregates.OrderAgg;
+    using Domain.Main.ERPModule.Aggregates.ProductAgg;
+    using Infrastructure.Data.Main.UnitOfWork.Mapping;
+    using Infrastructure.Data.Core;
 
     public class MainBCUnitOfWork
         :DbContext,IQueryableUnitOfWork

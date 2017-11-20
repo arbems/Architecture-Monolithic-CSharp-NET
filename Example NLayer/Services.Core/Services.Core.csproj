@@ -8,8 +8,8 @@
     <ProjectGuid>{32241C1D-E0D2-41D0-907A-0631943B360C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Nlayer.Samples.NLayerApp.DistributedServices.Core</RootNamespace>
-    <AssemblyName>NLayerApp.Services.Core</AssemblyName>
+    <RootNamespace>DistributedServices.Core</RootNamespace>
+    <AssemblyName>Services.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>

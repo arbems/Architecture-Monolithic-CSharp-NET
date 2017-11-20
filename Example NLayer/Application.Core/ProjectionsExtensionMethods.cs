@@ -1,8 +1,8 @@
-﻿namespace Nlayer.Samples.NLayerApp.Application.Core
+﻿namespace Application.Core
 {
     using System.Collections.Generic;
-    using Nlayer.Samples.NLayerApp.Domain.Core;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Adapter;
+    using Domain.Core;
+    using Infrastructure.Crosscutting.Adapter;
 
     public static class ProjectionsExtensionMethods
     {

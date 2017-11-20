@@ -1,21 +1,21 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Services
+﻿namespace Domain.Main.BankingModule.Services
 {
-    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.Resources;
+    using Domain.Main.BankingModule.Aggregates.BankAccountAgg;
+    using Domain.Main.Resources;
     using System;
 
     /// <summary>
     /// Bank transfer service implementation. 
-    /// <see cref="Nlayer.Samples.NLayerApp.Domain.Main.Aggregates.BankAccounts.IBankTransferService"/>
+    /// <see cref="Domain.Main.Aggregates.BankAccounts.IBankTransferService"/>
     /// </summary>
     public class BankTransferService : IBankTransferService
     {
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Services.IBankTransferService"/>
+        /// <see cref="Domain.Main.BankingModule.Services.IBankTransferService"/>
         /// </summary>
-        /// <param name="amount"> <see cref="Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Services.IBankTransferService"/></param>
-        /// <param name="originAccount"> <see cref="Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Services.IBankTransferService"/></param>
-        /// <param name="destinationAccount"> <see cref="Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Services.IBankTransferService"/></param>
+        /// <param name="amount"> <see cref="Domain.Main.BankingModule.Services.IBankTransferService"/></param>
+        /// <param name="originAccount"> <see cref="Domain.Main.BankingModule.Services.IBankTransferService"/></param>
+        /// <param name="destinationAccount"> <see cref="Domain.Main.BankingModule.Services.IBankTransferService"/></param>
         public void PerformTransfer(decimal amount, BankAccount originAccount, BankAccount destinationAccount)
         {
             if (originAccount != null && destinationAccount != null)

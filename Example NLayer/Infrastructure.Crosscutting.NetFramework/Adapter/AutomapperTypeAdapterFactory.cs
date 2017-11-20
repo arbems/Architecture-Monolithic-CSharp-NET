@@ -1,9 +1,9 @@
-﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Adapter
+﻿namespace Infrastructure.Crosscutting.NetFramework.Adapter
 {
     using System;
     using System.Linq;
     using AutoMapper;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Adapter;
+    using Infrastructure.Crosscutting.Adapter;
     using System.Reflection;
 
     public class AutomapperTypeAdapterFactory

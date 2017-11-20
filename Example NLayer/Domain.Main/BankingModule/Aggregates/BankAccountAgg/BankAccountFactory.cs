@@ -1,7 +1,7 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg
+﻿namespace Domain.Main.BankingModule.Aggregates.BankAccountAgg
 {
 
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
+    using Domain.Main.ERPModule.Aggregates.CustomerAgg;
 
     /// <summary>
     /// This is the factory for bank account creation, which means that the main purpose

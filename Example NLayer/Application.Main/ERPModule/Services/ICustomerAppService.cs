@@ -1,8 +1,8 @@
-﻿namespace Nlayer.Samples.NLayerApp.Application.Main.ERPModule.Services
+﻿namespace Application.Main.ERPModule.Services
 {
     using System;
     using System.Collections.Generic;
-    using Nlayer.Samples.NLayerApp.Application.Main.DTO;
+    using Application.Main.DTO;
 
     /// <summary>
     /// This is the contract that the customer will interact to perform various operations.

@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Core
+﻿namespace Domain.Core
 {
     using System;
 

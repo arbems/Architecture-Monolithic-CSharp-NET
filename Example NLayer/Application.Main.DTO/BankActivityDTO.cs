@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.NLayerApp.Application.Main.DTO
+﻿namespace Application.Main.DTO
 {
 
     using System;

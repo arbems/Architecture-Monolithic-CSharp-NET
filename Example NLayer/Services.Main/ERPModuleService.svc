@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Microsoft.Samples.NLayerApp.DistributedServices.MainBoundedContext.ERPModuleService" CodeBehind="ERPModuleService.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="DistributedServices.Main.ERPModuleService" CodeBehind="ERPModuleService.svc.cs" %>

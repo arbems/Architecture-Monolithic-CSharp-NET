@@ -1,13 +1,13 @@
 ﻿
-namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.BankingModule.Repositories
+namespace Infrastructure.Data.Main.BankingModule.Repositories
 {
     using System.Linq;
     using System.Collections.Generic;
     using System.Data.Entity;
 
-    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Core;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.UnitOfWork;
+    using Domain.Main.BankingModule.Aggregates.BankAccountAgg;
+    using Infrastructure.Data.Core;
+    using Infrastructure.Data.Main.UnitOfWork;
 
     /// <summary>
     /// The bank account repository implementation

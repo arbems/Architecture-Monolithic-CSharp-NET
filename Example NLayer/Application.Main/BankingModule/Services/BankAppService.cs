@@ -1,17 +1,17 @@
-﻿namespace Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services
+﻿namespace Application.Main.BankingModule.Services
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Transactions;
-    using Nlayer.Samples.NLayerApp.Application.Main.DTO;
-    using Nlayer.Samples.NLayerApp.Application.Main.Resources;
-    using Nlayer.Samples.NLayerApp.Application.Core;
-    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Services;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Validator;
+    using Application.Main.DTO;
+    using Application.Main.Resources;
+    using Application.Core;
+    using Domain.Main.BankingModule.Aggregates.BankAccountAgg;
+    using Domain.Main.BankingModule.Services;
+    using Domain.Main.ERPModule.Aggregates.CustomerAgg;
+    using Infrastructure.Crosscutting.Logging;
+    using Infrastructure.Crosscutting.Validator;
 
     /// <summary>
     /// The bank management service implementation
@@ -56,10 +56,10 @@
         #region IBankAppService Members
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services.IBankAppService"/>
+        /// <see cref="Application.Main.BankingModule.Services.IBankAppService"/>
         /// </summary>
-        /// <param name="bankAccountDTO"><see cref="Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services.IBankAppService"/></param>
-        /// <returns><see cref="Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services.IBankAppService"/></returns>
+        /// <param name="bankAccountDTO"><see cref="Application.Main.BankingModule.Services.IBankAppService"/></param>
+        /// <returns><see cref="Application.Main.BankingModule.Services.IBankAppService"/></returns>
         public BankAccountDTO AddBankAccount(BankAccountDTO bankAccountDTO)
         {
             if (bankAccountDTO == null || bankAccountDTO.CustomerId == Guid.Empty)
@@ -88,10 +88,10 @@
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services.IBankAppService"/>
+        /// <see cref="Application.Main.BankingModule.Services.IBankAppService"/>
         /// </summary>
-        /// <param name="bankAccountId"><see cref="Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services.IBankAppService"/></param>
-        /// <returns><see cref="Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services.IBankAppService"/></returns>
+        /// <param name="bankAccountId"><see cref="Application.Main.BankingModule.Services.IBankAppService"/></param>
+        /// <returns><see cref="Application.Main.BankingModule.Services.IBankAppService"/></returns>
         public bool LockBankAccount(Guid bankAccountId)
         {
             //recover bank account, lock and commit changes
@@ -114,9 +114,9 @@
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services.IBankAppService"/>
+        /// <see cref="Application.Main.BankingModule.Services.IBankAppService"/>
         /// </summary>
-        /// <returns><see cref="Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services.IBankAppService"/></returns>
+        /// <returns><see cref="Application.Main.BankingModule.Services.IBankAppService"/></returns>
         public List<BankAccountDTO> FindBankAccounts()
         {
             var bankAccounts = _bankAccountRepository.GetAll();
@@ -132,11 +132,11 @@
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services.IBankAppService"/>
+        /// <see cref="Application.Main.BankingModule.Services.IBankAppService"/>
         /// </summary>
-        /// <param name="fromAccount"><see cref="Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services.IBankAppService"/></param>
-        /// <param name="toAccount"><see cref="Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services.IBankAppService"/></param>
-        /// <param name="amount"><see cref="Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services.IBankAppService"/></param>
+        /// <param name="fromAccount"><see cref="Application.Main.BankingModule.Services.IBankAppService"/></param>
+        /// <param name="toAccount"><see cref="Application.Main.BankingModule.Services.IBankAppService"/></param>
+        /// <param name="amount"><see cref="Application.Main.BankingModule.Services.IBankAppService"/></param>
         public void PerformBankTransfer(BankAccountDTO fromAccount, BankAccountDTO toAccount, decimal amount)
         {
             //Application-Logic Process: 
@@ -174,10 +174,10 @@
 
         }
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services.IBankAppService"/>
+        /// <see cref="Application.Main.BankingModule.Services.IBankAppService"/>
         /// </summary>
-        /// <param name="bankAccountId"><see cref="Nlayer.Samples.NLayerApp.Application.Main.ERPModule.Services.IBankManagementService"/></param>
-        /// <returns><see cref="Nlayer.Samples.NLayerApp.Application.Main.ERPModule.Services.IBankManagementService"/></returns>
+        /// <param name="bankAccountId"><see cref="Application.Main.ERPModule.Services.IBankManagementService"/></param>
+        /// <returns><see cref="Application.Main.ERPModule.Services.IBankManagementService"/></returns>
         public List<BankActivityDTO> FindBankAccountActivities(Guid bankAccountId)
         {
             var account = _bankAccountRepository.Get(bankAccountId);

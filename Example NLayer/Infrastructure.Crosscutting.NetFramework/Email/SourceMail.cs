@@ -1,7 +1,7 @@
 ﻿namespace Infrastructure.Crosscutting.NetFramework.Email
 {
     using Infrastructure.Crosscutting.Email;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging;
+    using Infrastructure.Crosscutting.Logging;
     using MimeKit;
     using MimeKit.Cryptography;
     using Org.BouncyCastle.Crypto;
@@ -14,67 +14,99 @@
 
     public sealed class SourceMail : IMail
     {
-        //Envio correo
-        SmtpClient smtp = new SmtpClient();
-        MailMessage email = new MailMessage();
-
-        public SourceMail()
+        public bool SendMail(string subject, string body, string to, string from, string password, string displayName, string host, int port, bool enableSsl, bool useDefaultCredentials, bool isBodyHtml, string nameHeader, string valueHeader, string message)
         {
-            smtp.Host = "gelook-info.correoseguro.dinaserver.com";
-            smtp.Port = 587;
-            smtp.EnableSsl = true;
-            smtp.UseDefaultCredentials = true;
-        }
+            var mail = new MailMessage();
 
-        public bool SendMail(string _subject, string _body, string _to, string _from, string _error)
-        {
-            //SendMailDkim(_subject, _body, _to, _from, _error);
-            //EnviarCorreo();
+            mail.Subject = subject;
+            mail.SubjectEncoding = System.Text.Encoding.UTF8;
+            mail.Body = body;
+            mail.From = new MailAddress(from, displayName);
+            mail.To.Add(to);
+            mail.IsBodyHtml = isBodyHtml;
+            mail.Headers.Add(nameHeader, valueHeader);
 
-            smtp.Credentials = new NetworkCredential(_from, "LXnYJ2W3");
-            email.Subject = _subject;
-            email.Body = _body;
-            email.From = new MailAddress(_from, "Gelook");
-            email.To.Add(_to);
-            email.IsBodyHtml = true;
+            var smtp = new SmtpClient();
+
+            smtp.Credentials = new NetworkCredential(from, password);
+            smtp.Host = host;
+            smtp.Port = port;
+            smtp.EnableSsl = enableSsl;
+            smtp.UseDefaultCredentials = useDefaultCredentials;
 
             try
             {
-                smtp.Send(email);
-                email.Dispose();
+                smtp.Send(mail);
+                mail.Dispose();
             }
-            catch (Exception ex)
+            catch (System.Net.Mail.SmtpException ex)
             {
-                LoggerFactory.CreateLog().LogError(_error, ex.Message, _to);
+                LoggerFactory.CreateLog().LogError(message, ex.Message, "System.Net.Mail.SmtpException: SendMail to: " + to);
                 return false;
             }
 
             return true;
         }
 
-        public void SendMailDkim(string _subject, string _body, string _to, string _from, string _error)
+        public bool Mailing(string subject, string body, string from, string password, string displayName, string host, int port, bool enableSsl, bool useDefaultCredentials, bool isBodyHtml, string nameHeader, string valueHeader, string message, string[] addresses = null, string[] addressesInCopy = null)
         {
-            var message = new MimeMessage();
-            message.From.Add(new MailboxAddress("Joey", _from));
-            message.To.Add(new MailboxAddress("Alice", "arbems@outlook.com"));
-            message.Subject = _subject;
+            var mail = new MailMessage();
+
+            mail.Subject = subject;
+            mail.SubjectEncoding = System.Text.Encoding.UTF8;
+            mail.Body = body;
+            mail.From = new MailAddress(from, displayName);
+            mail.IsBodyHtml = isBodyHtml;
+            mail.Headers.Add(nameHeader, valueHeader);
+
+            foreach (var address in addresses)
+                mail.To.Add(address);
+            foreach (var address in addressesInCopy)
+                mail.Bcc.Add(address);            
+
+            var smtp = new SmtpClient();
+
+            smtp.Credentials = new NetworkCredential(from, password);
+            smtp.Host = host;
+            smtp.Port = port;
+            smtp.EnableSsl = enableSsl;
+            smtp.UseDefaultCredentials = useDefaultCredentials;
+
+            try
+            {
+                smtp.Send(mail);
+                mail.Dispose();
+            }
+            catch (System.Net.Mail.SmtpException ex)
+            {
+                LoggerFactory.CreateLog().LogError(message, ex.Message, "System.Net.Mail.SmtpException: Mailing to: " + string.Join(",", addresses));
+                return false;
+            }
+
+            return true;
+        }
+
+        void SendMailDkim(string subject, string body, string to, string from, string password, string displayNameTo, string displayNameFrom, string host, int port, bool useSsl, bool useDefaultCredentials, string domain, string selector, string[] addresses, string[] addressesCopy, string message)
+        {
+            var mimeMessage = new MimeMessage();
+
+            mimeMessage.From.Add(new MailboxAddress(displayNameFrom, from));
+            mimeMessage.To.Add(new MailboxAddress(displayNameTo, to));
+            mimeMessage.Subject = subject;
 
             var builder = new BodyBuilder();
             // Set the html version of the message text
-            builder.HtmlBody = _body;
+            builder.HtmlBody = body;
             // Now we just need to set the message body and we're done
-            message.Body = builder.ToMessageBody ();
+            mimeMessage.Body = builder.ToMessageBody();
 
-var headersToSign = new [] { HeaderId.From, HeaderId.To, 
-    HeaderId.Subject, HeaderId.Date };
-var signer = new DkimSigner(@"C:\Users\ArBe\Documents\Copias de seguridad\GELOOK\DESARROLLO\2.Web\NLayerGelook2_Design\Infrastructure.Crosscutting.NetFramework\my-dkim-key.pem", "gelook.info", "default");
+            var headersToSign = new[] { HeaderId.From, HeaderId.To, HeaderId.Subject, HeaderId.Date };
+            var signer = new DkimSigner(@"C:\my-dkim-key.pem", domain, selector);
 
-message.Sign (signer, headersToSign, 
-    DkimCanonicalizationAlgorithm.Relaxed, 
-    DkimCanonicalizationAlgorithm.Simple);
+            mimeMessage.Sign(signer, headersToSign, DkimCanonicalizationAlgorithm.Relaxed, DkimCanonicalizationAlgorithm.Simple);
 
-            SendMessage(message);
-            
+            SendMessage(mimeMessage, from, password, host, port, useSsl);
+
         }
         static AsymmetricKeyParameter readPrivateKey(string privateKeyFileName)
         {
@@ -85,79 +117,17 @@ message.Sign (signer, headersToSign,
 
             return keyPair.Private;
         }
-        public static void SendMessage(MimeMessage message)
+        static void SendMessage(MimeMessage msg, string address, string password, string host, int port, bool useSsl)
         {
             using (var client = new MailKit.Net.Smtp.SmtpClient())
             {
-                client.Connect("gelook-info.correoseguro.dinaserver.com", 587, false);
+                client.Connect(host, port, useSsl);
 
-               client.Authenticate("equipo@gelook.info", "LXnYJ2W3");
+                client.Authenticate(address, password);
 
-                client.Send(message);
+                client.Send(msg);
 
                 client.Disconnect(true);
-            }
-        }
-
-
-
-        public void EnviarCorreo()
-        {
-            /*-------------------------MENSAJE DE CORREO----------------------*/
-
-            //Creamos un nuevo Objeto de mensaje
-            System.Net.Mail.MailMessage mmsg = new System.Net.Mail.MailMessage();
-
-            //Direccion de correo electronico a la que queremos enviar el mensaje
-            mmsg.To.Add("arbems@gmail.com");
-
-            //Nota: La propiedad To es una colección que permite enviar el mensaje a más de un destinatario
-
-            //Asunto
-            mmsg.Subject = "Pruebas";
-            mmsg.SubjectEncoding = System.Text.Encoding.UTF8;
-
-            //Direccion de correo electronico que queremos que reciba una copia del mensaje
-            //mmsg.Bcc.Add("destinatariocopia@servidordominio.com"); //Opcional
-
-            //Cuerpo del Mensaje
-            mmsg.Body = "Pruebas numero 2";
-            mmsg.BodyEncoding = System.Text.Encoding.UTF8;
-            mmsg.IsBodyHtml = false; //Si no queremos que se envíe como HTML
-
-            //Correo electronico desde la que enviamos el mensaje
-            mmsg.From = new System.Net.Mail.MailAddress("equipo@gelook.info");
-            //mmsg.Headers.Add("X-DKIM-Result", "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9gXyw/XfOruQiZP0kFirVperrHPkAL5R3ByVIWi2S/4SJg/matONaXTChew8yncUObrYAHfqmQbQ9uFLch18+eQVhp7FQX67XybEWgJ58tY2J/5vvCkGJjq7PHQ7QwMTBwCiIJFCC2CKnG+cwO9cax9EzRJgSbRBJ2UWtMZndLwIDAQAB");
-
-
-            /*-------------------------CLIENTE DE CORREO----------------------*/
-
-            //Creamos un objeto de cliente de correo
-            System.Net.Mail.SmtpClient cliente = new System.Net.Mail.SmtpClient();
-
-            //Hay que crear las credenciales del correo emisor
-            cliente.Credentials = new System.Net.NetworkCredential("equipo@gelook.info", "LXnYJ2W3");
-
-            //Lo siguiente es obligatorio si enviamos el mensaje desde Gmail
-            
-            cliente.Port = 587;
-            cliente.EnableSsl = true;
-            cliente.UseDefaultCredentials = false;
-
-
-            cliente.Host = "gelook-info.correoseguro.dinaserver.com"; //Para Gmail "smtp.gmail.com";
-
-
-            /*-------------------------ENVIO DE CORREO----------------------*/
-
-            try
-            {
-                //Enviamos el mensaje      
-                cliente.Send(mmsg);
-            }
-            catch (System.Net.Mail.SmtpException ex)
-            {
-                //Aquí gestionamos los errores al intentar enviar el correo
             }
         }
 

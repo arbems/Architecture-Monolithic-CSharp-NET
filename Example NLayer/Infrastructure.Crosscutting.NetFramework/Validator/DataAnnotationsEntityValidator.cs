@@ -1,11 +1,11 @@
-﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Validator
+﻿namespace Infrastructure.Crosscutting.NetFramework.Validator
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
 
-    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Validator;
+    using Infrastructure.Crosscutting.Validator;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel;
 
@@ -65,11 +65,11 @@
 
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Infrastructure.CrossCutting.Validator.IEntityValidator"/>
+        /// <see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/>
         /// </summary>
-        /// <typeparam name="TEntity"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.CrossCutting.Validator.IEntityValidator"/></typeparam>
-        /// <param name="item"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.CrossCutting.Validator.IEntityValidator"/></param>
-        /// <returns><see cref="Nlayer.Samples.NLayerApp.Infrastructure.CrossCutting.Validator.IEntityValidator"/></returns>
+        /// <typeparam name="TEntity"><see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/></typeparam>
+        /// <param name="item"><see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/></param>
+        /// <returns><see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/></returns>
         public bool IsValid<TEntity>(TEntity item) where TEntity : class
         {
 
@@ -84,11 +84,11 @@
             return !validationErrors.Any();
         }
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Infrastructure.CrossCutting.Validator.IEntityValidator"/>
+        /// <see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/>
         /// </summary>
-        /// <typeparam name="TEntity"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.CrossCutting.Validator.IEntityValidator"/></typeparam>
-        /// <param name="item"><see cref="Nlayer.Samples.NLayerApp.Infrastructure.CrossCutting.Validator.IEntityValidator"/></param>
-        /// <returns><see cref="Nlayer.Samples.NLayerApp.Infrastructure.CrossCutting.Validator.IEntityValidator"/></returns>
+        /// <typeparam name="TEntity"><see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/></typeparam>
+        /// <param name="item"><see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/></param>
+        /// <returns><see cref="Infrastructure.CrossCutting.Validator.IEntityValidator"/></returns>
         public IEnumerable<string> GetInvalidMessages<TEntity>(TEntity item) where TEntity : class
         {
             if (item == null)

@@ -1,10 +1,10 @@
-﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Validator
+﻿namespace Infrastructure.Crosscutting.NetFramework.Validator
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Validator;
+    using Infrastructure.Crosscutting.Validator;
 
     /// <summary>
     /// Data Annotations based entity validator factory

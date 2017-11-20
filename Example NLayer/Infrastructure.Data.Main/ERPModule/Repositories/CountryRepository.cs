@@ -1,11 +1,11 @@
-﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.ERPModule.Repositories
+﻿namespace Infrastructure.Data.Main.ERPModule.Repositories
 {
     using System.Linq;
     using System.Collections.Generic;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Core;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.UnitOfWork;
-    using global::Infrastructure.Crosscutting.Caching;
+    using Domain.Main.ERPModule.Aggregates.CountryAgg;
+    using Infrastructure.Data.Core;
+    using Infrastructure.Data.Main.UnitOfWork;
+    using Infrastructure.Crosscutting.Caching;
 
     /// <summary>
     /// The country repository implementation

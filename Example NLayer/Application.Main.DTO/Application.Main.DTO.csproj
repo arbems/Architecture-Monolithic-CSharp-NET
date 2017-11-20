@@ -8,8 +8,8 @@
     <ProjectGuid>{62FB7287-FE06-4E8B-AB66-25603D9E2610}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Nlayer.Samples.NLayerApp.Application.Main.DTO</RootNamespace>
-    <AssemblyName>NLayerApp.Application.Main.DTO</AssemblyName>
+    <RootNamespace>Application.Main.DTO</RootNamespace>
+    <AssemblyName>Application.Main.DTO</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>

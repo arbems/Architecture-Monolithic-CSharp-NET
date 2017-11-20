@@ -1,11 +1,11 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg
+﻿namespace Domain.Main.BankingModule.Aggregates.BankAccountAgg
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
-    using Nlayer.Samples.NLayerApp.Domain.Core;
-    using Nlayer.Samples.NLayerApp.Domain.Main.Resources;
+    using Domain.Core;
+    using Domain.Main.Resources;
 
     /// <summary>
     /// The bank transferLog representation

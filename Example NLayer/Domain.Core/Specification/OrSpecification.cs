@@ -1,8 +1,8 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Core.Specification
+﻿namespace Domain.Core.Specification
 {
     using System;
     using System.Linq.Expressions;
-    using Nlayer.Samples.NLayerApp.Domain.Core;
+    using Domain.Core;
 
     /// <summary>
     /// A Logic OR Specification
@@ -58,9 +58,9 @@
             get { return _RightSideSpecification; }
         }
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Core.Specification.ISpecification{T}"/>
+        /// <see cref="Domain.Core.Specification.ISpecification{T}"/>
         /// </summary>
-        /// <returns><see cref="Nlayer.Samples.NLayerApp.Domain.Core.Specification.ISpecification{T}"/></returns>
+        /// <returns><see cref="Domain.Core.Specification.ISpecification{T}"/></returns>
         public override Expression<Func<T, bool>> SatisfiedBy()
         {
             Expression<Func<T, bool>> left = _LeftSideSpecification.SatisfiedBy();

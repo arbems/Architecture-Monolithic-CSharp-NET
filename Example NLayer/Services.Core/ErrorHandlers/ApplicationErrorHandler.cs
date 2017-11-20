@@ -1,11 +1,11 @@
-﻿using Nlayer.Samples.NLayerApp.DistributedServices.Core.Resources;
-using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging;
+﻿using DistributedServices.Core.Resources;
+using Infrastructure.Crosscutting.Logging;
 using System;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Dispatcher;
 
-namespace Nlayer.Samples.NLayerApp.DistributedServices.Core.ErrorHandlers
+namespace DistributedServices.Core.ErrorHandlers
 {
 
    /// <summary>

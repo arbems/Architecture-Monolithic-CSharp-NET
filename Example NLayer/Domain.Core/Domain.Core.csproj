@@ -8,8 +8,8 @@
     <ProjectGuid>{04D675A3-B794-44BD-A25C-673BB44739CB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Nlayer.Samples.NLayerApp.Domain.Core</RootNamespace>
-    <AssemblyName>NLayerApp.Domain.Core</AssemblyName>
+    <RootNamespace>Domain.Core</RootNamespace>
+    <AssemblyName>Domain.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>

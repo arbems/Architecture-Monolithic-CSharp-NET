@@ -1,6 +1,6 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Core.Specification
+﻿namespace Domain.Core.Specification
 {
-    using Nlayer.Samples.NLayerApp.Domain.Core;
+    using Domain.Core;
 
     /// <summary>
     /// Base class for composite specifications

@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Nlayer.Samples.NLayerApp.DistributedServices.Core.ErrorHandlers
+namespace DistributedServices.Core.ErrorHandlers
 {
 
    /// <summary>

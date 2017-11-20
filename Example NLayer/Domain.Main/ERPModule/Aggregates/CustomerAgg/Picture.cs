@@ -1,8 +1,8 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg
+﻿namespace Domain.Main.ERPModule.Aggregates.CustomerAgg
 {
 
     using System;
-    using Nlayer.Samples.NLayerApp.Domain.Core;
+    using Domain.Core;
 
     /// <summary>
     /// Picture of customer

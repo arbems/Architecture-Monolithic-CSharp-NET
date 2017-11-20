@@ -1,11 +1,11 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg
+﻿namespace Domain.Main.ERPModule.Aggregates.CustomerAgg
 {
 
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Nlayer.Samples.NLayerApp.Domain.Core.Specification;
+    using Domain.Core.Specification;
 
     /// <summary>
     /// A list of customer specifications. You can learn

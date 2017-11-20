@@ -1,6 +1,6 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.OrderAgg
+﻿namespace Domain.Main.ERPModule.Aggregates.OrderAgg
 {
-    using Nlayer.Samples.NLayerApp.Domain.Core;
+    using Domain.Core;
 
     /// <summary>
     /// The order repository contract

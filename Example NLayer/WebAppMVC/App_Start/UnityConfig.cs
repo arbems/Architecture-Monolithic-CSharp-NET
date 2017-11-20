@@ -1,9 +1,9 @@
-using Nlayer.Samples.NLayerApp.Application.Main.ERPModule.Services;
-using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg;
-using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
-using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Adapter;
-using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Adapter;
-using Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.ERPModule.Repositories;
+using Application.Main.ERPModule.Services;
+using Domain.Main.ERPModule.Aggregates.CountryAgg;
+using Domain.Main.ERPModule.Aggregates.CustomerAgg;
+using Infrastructure.Crosscutting.Adapter;
+using Infrastructure.Crosscutting.NetFramework.Adapter;
+using Infrastructure.Data.Main.ERPModule.Repositories;
 using System;
 using System.Web;
 using Unity;

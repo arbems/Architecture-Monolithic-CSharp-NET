@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.ProductAgg
+namespace Domain.Main.ERPModule.Aggregates.ProductAgg
 {
     /// <summary>
     /// The book product

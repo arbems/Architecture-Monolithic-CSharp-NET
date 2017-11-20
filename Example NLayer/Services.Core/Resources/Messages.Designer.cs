@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Nlayer.Samples.NLayerApp.DistributedServices.Core.Resources {
+namespace DistributedServices.Core.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Nlayer.Samples.NLayerApp.DistributedServices.Core.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Nlayer.Samples.NLayerApp.DistributedServices.Core.Resources.Messages", typeof(Messages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DistributedServices.Core.Resources.Messages", typeof(Messages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

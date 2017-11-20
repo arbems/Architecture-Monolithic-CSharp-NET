@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Adapter
+﻿namespace Infrastructure.Crosscutting.Adapter
 {
     /// <summary>
     /// Base contract for map dto to aggregate or aggregate to dto.

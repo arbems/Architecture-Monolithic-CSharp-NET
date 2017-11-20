@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Adapter
+namespace Infrastructure.Crosscutting.Adapter
 {
     /// <summary>
     /// Base contract for adapter factory

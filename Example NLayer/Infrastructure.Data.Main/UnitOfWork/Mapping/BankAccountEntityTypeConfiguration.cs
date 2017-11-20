@@ -1,8 +1,8 @@
-﻿namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.UnitOfWork.Mapping
+﻿namespace Infrastructure.Data.Main.UnitOfWork.Mapping
 {
     using System.Data.Entity.ModelConfiguration;
 
-    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg;
+    using Domain.Main.BankingModule.Aggregates.BankAccountAgg;
 
     /// <summary>
     /// The entity type configuration

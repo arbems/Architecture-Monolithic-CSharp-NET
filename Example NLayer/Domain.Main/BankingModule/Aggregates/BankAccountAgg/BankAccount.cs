@@ -1,11 +1,11 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg
+﻿namespace Domain.Main.BankingModule.Aggregates.BankAccountAgg
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.Resources;
-    using Nlayer.Samples.NLayerApp.Domain.Core;
+    using Domain.Main.ERPModule.Aggregates.CustomerAgg;
+    using Domain.Main.Resources;
+    using Domain.Core;
 
     /// <summary>
     /// The bank account representation (Domain Entity)

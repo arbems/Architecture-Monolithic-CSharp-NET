@@ -1,7 +1,7 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg
+﻿namespace Domain.Main.BankingModule.Aggregates.BankAccountAgg
 {
     using System;
-    using Nlayer.Samples.NLayerApp.Domain.Core.Specification;
+    using Domain.Core.Specification;
 
     /// <summary>
     /// A list of bank account specifications. You can learn

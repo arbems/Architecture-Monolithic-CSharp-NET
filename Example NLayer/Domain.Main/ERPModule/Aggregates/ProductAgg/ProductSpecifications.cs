@@ -1,10 +1,10 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.ProductAgg
+﻿namespace Domain.Main.ERPModule.Aggregates.ProductAgg
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Nlayer.Samples.NLayerApp.Domain.Core.Specification;
+    using Domain.Core.Specification;
 
     /// <summary>
     /// A list of product specifications. You can learn

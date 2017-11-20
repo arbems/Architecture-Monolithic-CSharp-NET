@@ -1,6 +1,6 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg
+﻿namespace Domain.Main.ERPModule.Aggregates.CustomerAgg
 {
-    using Nlayer.Samples.NLayerApp.Domain.Core;
+    using Domain.Core;
 
 
     /// <summary>

@@ -1,35 +1,23 @@
-﻿//===================================================================================
-// Microsoft Developer & Platform Evangelism
-//=================================================================================== 
-// THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, 
-// EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES 
-// OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
-//===================================================================================
-// Copyright (c) Microsoft Corporation.  All Rights Reserved.
-// This code is released under the terms of the MS-LPL license, 
-// http://microsoftnlayerapp.codeplex.com/license
-//===================================================================================
-			
-namespace Microsoft.Samples.NLayerApp.DistributedServices.MainBoundedContext.InstanceProviders
+﻿namespace DistributedServices.Main.InstanceProviders
 {
     using Microsoft.Practices.Unity;
-    using Nlayer.Samples.NLayerApp.Application.Main.BankingModule.Services;
-    using Nlayer.Samples.NLayerApp.Application.Main.ERPModule.Services;
-    using Nlayer.Samples.NLayerApp.DistributedServices.Main;
-    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Aggregates.BankAccountAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.BankingModule.Services;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CountryAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.OrderAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.ProductAgg;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Adapter;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Logging;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Adapter;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Logging;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.NetFramework.Validator;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting.Validator;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.BankingModule.Repositories;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.ERPModule.Repositories;
+    using Application.Main.BankingModule.Services;
+    using Application.Main.ERPModule.Services;
+    using DistributedServices.Main;
+    using Domain.Main.BankingModule.Aggregates.BankAccountAgg;
+    using Domain.Main.BankingModule.Services;
+    using Domain.Main.ERPModule.Aggregates.CountryAgg;
+    using Domain.Main.ERPModule.Aggregates.CustomerAgg;
+    using Domain.Main.ERPModule.Aggregates.OrderAgg;
+    using Domain.Main.ERPModule.Aggregates.ProductAgg;
+    using Infrastructure.Crosscutting.Adapter;
+    using Infrastructure.Crosscutting.Logging;
+    using Infrastructure.Crosscutting.NetFramework.Adapter;
+    using Infrastructure.Crosscutting.NetFramework.Logging;
+    using Infrastructure.Crosscutting.NetFramework.Validator;
+    using Infrastructure.Crosscutting.Validator;
+    using Infrastructure.Data.Main.BankingModule.Repositories;
+    using Infrastructure.Data.Main.ERPModule.Repositories;
 
     /// <summary>
     /// DI container accessor

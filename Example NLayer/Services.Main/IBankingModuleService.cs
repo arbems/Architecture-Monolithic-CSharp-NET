@@ -1,10 +1,10 @@
-﻿namespace Nlayer.Samples.NLayerApp.DistributedServices.Main
+﻿namespace DistributedServices.Main
 {
     using System;
     using System.Collections.Generic;
     using System.ServiceModel;
-    using Nlayer.Samples.NLayerApp.Application.Main.DTO;
-    using Nlayer.Samples.NLayerApp.DistributedServices.Core.ErrorHandlers;
+    using Application.Main.DTO;
+    using DistributedServices.Core.ErrorHandlers;
 
     /// <summary>
     /// WCF SERVICE FACADE for Banking Module

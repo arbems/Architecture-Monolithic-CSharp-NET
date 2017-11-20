@@ -1,4 +1,4 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Core.Specification
+﻿namespace Domain.Core.Specification
 {
     using System;
     using System.Linq.Expressions;
@@ -14,9 +14,9 @@
         #region Specification overrides
 
         /// <summary>
-        /// <see cref=" Nlayer.Samples.NLayerApp.Domain.Core.Specification.Specification{TEntity}"/>
+        /// <see cref=" Domain.Core.Specification.Specification{TEntity}"/>
         /// </summary>
-        /// <returns><see cref=" Nlayer.Samples.NLayerApp.Domain.Core.Specification.Specification{TEntity}"/></returns>
+        /// <returns><see cref=" Domain.Core.Specification.Specification{TEntity}"/></returns>
         public override System.Linq.Expressions.Expression<Func<TEntity, bool>> SatisfiedBy()
         {
             //Create "result variable" transform adhoc execution plan in prepared plan

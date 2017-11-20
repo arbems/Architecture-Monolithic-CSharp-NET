@@ -1,10 +1,10 @@
-﻿namespace Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.OrderAgg
+﻿namespace Domain.Main.ERPModule.Aggregates.OrderAgg
 {
     using System;
 
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.OrderAgg;
-    using Nlayer.Samples.NLayerApp.Domain.Main.Resources;
+    using Domain.Main.ERPModule.Aggregates.CustomerAgg;
+    using Domain.Main.ERPModule.Aggregates.OrderAgg;
+    using Domain.Main.Resources;
 
     /// <summary>
     /// This is the factory for Order creation, which means that the main purpose

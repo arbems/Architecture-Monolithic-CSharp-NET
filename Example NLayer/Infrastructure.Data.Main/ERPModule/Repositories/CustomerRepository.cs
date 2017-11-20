@@ -1,14 +1,14 @@
 ﻿
-namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.ERPModule.Repositories
+namespace Infrastructure.Data.Main.ERPModule.Repositories
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Data.Entity;
 
-    using Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.UnitOfWork;
-    using Nlayer.Samples.NLayerApp.Infrastructure.Data.Core;
+    using Domain.Main.ERPModule.Aggregates.CustomerAgg;
+    using Infrastructure.Data.Main.UnitOfWork;
+    using Infrastructure.Data.Core;
 
 
     /// <summary>
@@ -34,7 +34,7 @@ namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.ERPModule.Repositori
         #region ICustomerRepository Members
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/>
+        /// <see cref="Domain.Main.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/>
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -64,11 +64,11 @@ namespace Nlayer.Samples.NLayerApp.Infrastructure.Data.Main.ERPModule.Repositori
         }
 
         /// <summary>
-        /// <see cref="Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/>
+        /// <see cref="Domain.Main.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/>
         /// </summary>
-        /// <param name="pageIndex"><see cref="Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/></param>
-        /// <param name="pageCount"><see cref="Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/></param>
-        /// <returns><see cref="Nlayer.Samples.NLayerApp.Domain.Main.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/></returns>
+        /// <param name="pageIndex"><see cref="Domain.Main.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/></param>
+        /// <param name="pageCount"><see cref="Domain.Main.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/></param>
+        /// <returns><see cref="Domain.Main.ERPModule.Aggregates.CustomerAgg.ICustomerRepository"/></returns>
         public IEnumerable<Customer> GetEnabled(int pageIndex, int pageCount)
         {
             var currentUnitOfWork = this.UnitOfWork as MainBCUnitOfWork;

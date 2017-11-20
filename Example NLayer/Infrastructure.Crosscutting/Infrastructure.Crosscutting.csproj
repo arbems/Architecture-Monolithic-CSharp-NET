@@ -8,8 +8,8 @@
     <ProjectGuid>{106C7F00-C03F-4E29-87AF-ACD1BA292078}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Nlayer.Samples.NLayerApp.Infrastructure.Crosscutting</RootNamespace>
-    <AssemblyName>NLayerApp.Infrastructure.Crosscutting</AssemblyName>
+    <RootNamespace>Infrastructure.Crosscutting</RootNamespace>
+    <AssemblyName>Infrastructure.Crosscutting</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
@@ -65,7 +65,7 @@
     <Compile Include="Email\IMail.cs" />
     <Compile Include="Email\IMailFactory.cs" />
     <Compile Include="Email\MailFactory.cs" />
-    <Compile Include="Image\IImage.cs" />
+    <Compile Include="Media\IPicture.cs" />
     <Compile Include="Logging\ILoggerFactory.cs" />
     <Compile Include="Logging\LoggerFactory.cs" />
     <Compile Include="Properties\GlobalSuppressions.cs" />
